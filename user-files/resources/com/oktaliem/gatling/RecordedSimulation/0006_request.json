@@ -1,0 +1,1 @@
+{"jsonrpc":"2.0","method":"call","params":{"args":[2,["action_id"]],"model":"res.users","method":"read","kwargs":{"context":{"lang":"en_US","tz":"Europe/Brussels","uid":2,"allowed_company_ids":[1]}}},"id":98073746}

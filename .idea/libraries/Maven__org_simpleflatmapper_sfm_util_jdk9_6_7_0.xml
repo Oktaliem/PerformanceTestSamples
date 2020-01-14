@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.simpleflatmapper:sfm-util:jdk9:6.7.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/simpleflatmapper/sfm-util/6.7.0/sfm-util-6.7.0-jdk9.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/simpleflatmapper/sfm-util/6.7.0/sfm-util-6.7.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/simpleflatmapper/sfm-util/6.7.0/sfm-util-6.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

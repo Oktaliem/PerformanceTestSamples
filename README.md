@@ -1,5 +1,3 @@
-# PerformaceTestSamples
-
 <h4 align="center">Sample performance testing for both server-side and client-side for Web Application</h4>
 
 ## Server-side Performance Testing tools
@@ -13,18 +11,23 @@ Tools that being used in this repository:
 - Web.dev / Chrome Extention - Lighthouse
 - Webpagetest
 
+## SUT - Install Odoo via Docker
+```
+$ curl -sSL https://raw.githubusercontent.com/bitnami/bitnami-docker-odoo/master/docker-compose.yml > docker-compose.yml
+$ docker-compose up -d
+```
 
-## Running server-side performance testing with JMeter
+## Running demo server-side performance testing with JMeter
 ```properties
 1. Go to your JMeter path
-{path_to_JMeter}/apache-jmeter-5.2.1
+{path_to_JMeter}/apache-jmeter-5.2.1/
 2. Run this below syntax
 
 
 ```
 
 
-## Running server-side performance testing with Gatling
+## Running demo server-side performance testing with Gatling
 ```properties
 1. Go to your project path
 ${your_project_path}/PerformaceTestSamples
@@ -33,7 +36,7 @@ $ mvn clean gatling:test -Dgatling.simulationClass=com.oktaliem.gatling.OdooLogi
 
 ```
 
-## Running server-side performance testing with LoadRunner
+## Running demo server-side performance testing with LoadRunner
 
 
 

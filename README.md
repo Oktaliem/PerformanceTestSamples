@@ -17,8 +17,7 @@ $ docker-compose up -d
 
 ## Running server-side load testing demo with JMeter
 ```properties
-1. Go to your JMeter path
-{path_to_JMeter}/apache-jmeter-5.2.1/
+1. Go to your JMeter path {path_to_JMeter}/apache-jmeter-5.2.1/
 2. Run this below syntax
 
 
@@ -27,8 +26,7 @@ $ docker-compose up -d
 
 ## Running server-side load testing demo with Gatling
 ```properties
-1. Go to your project path
-${your_project_path}/PerformaceTestSamples
+1. Go to your project path ${your_project_path}/PerformaceTestSamples
 2. Run this syntax
 $ mvn clean gatling:test -Dgatling.simulationClass=com.oktaliem.gatling.OdooLoginTest -Dusers=50 -DrampUp=50
 
@@ -43,7 +41,6 @@ $ mvn clean gatling:test -Dgatling.simulationClass=com.oktaliem.gatling.OdooLogi
 
 ## Open Gatling HTML Report
 ```
-Click on
 {path_to_your_project}/PerformaceTestSamples/target/gatling/odoologintest-{gatling_id_report}/index.html
 ```
 

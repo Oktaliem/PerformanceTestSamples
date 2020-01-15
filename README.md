@@ -17,7 +17,7 @@ $ docker-compose up -d
 
 ## Running server-side load testing demo with JMeter
 ```properties
-1. Go to your JMeter path {path_to_JMeter}/apache-jmeter-5.2.1/
+1. Go to your JMeter path ${your_project_path}/PerformaceTestSamples/apache-jmeter-5.2.1/
 2. Run this below syntax
 
 

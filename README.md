@@ -17,7 +17,10 @@ $ docker-compose up -d
 
 ## APACHE JMETER
 
-### Running server-side load testing demo with JMeter
+### Download and Install JMeter
+[I'm an inline-style link](https://jmeter.apache.org/download_jmeter.cgi)
+
+###### Running server-side load testing demo with JMeter
 ```properties
 1. Go to your JMeter path ${your_project_path}/PerformaceTestSamples/apache-jmeter-5.2.1/
 2. Run this below syntax
@@ -25,13 +28,14 @@ $ ./jmeter -Jusers=50 -Jrampup=50 -Jhold=50 -Jrampdown=50 -n -t "${your_project_
 
 ```
 
-### Open JMeter HTML Report
+###### Open JMeter HTML Report
 ```
 ${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/bin/htmlreport/index.html
 ```
 
+## GATLING
 
-## Running server-side load testing demo with Gatling
+###### Running server-side load testing demo with Gatling
 ```properties
 1. Go to your project path ${your_project_path}/PerformaceTestSamples
 2. Run this syntax
@@ -39,12 +43,14 @@ $ mvn clean gatling:test -Dgatling.simulationClass=com.oktaliem.gatling.OdooLogi
 
 ```
 
-## Running server-side load testing demo with LoadRunner
-
-## Open Gatling HTML Report
+###### Open Gatling HTML Report
 ```
 ${path_to_your_project}/PerformaceTestSamples/target/gatling/odoologintest-${gatling_id_report}/index.html
 ```
+
+## Running server-side load testing demo with LoadRunner
+
+
 
 ## Open LoadRunner HTML Report
 

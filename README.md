@@ -57,11 +57,16 @@ $ mvn clean gatling:test -Dgatling.simulationClass=com.oktaliem.gatling.OdooLogi
 ${path_to_your_project}/PerformaceTestSamples/target/gatling/odoologintest-${gatling_id_report}/index.html
 ```
 
-## Running server-side load testing demo with LoadRunner - Web Application
+
+## LOADRUNNER
+
+###### Download and Install LoadRunner
+[Download & Install](https://www.guru99.com/guide-to-download-and-install-hp-loadrunner-12-0.html)
+
+###### Running server-side load testing demo with LoadRunner - Web Application
 
 
-
-## Open LoadRunner HTML Report
+###### Open LoadRunner HTML Report
 
 
 

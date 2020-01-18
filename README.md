@@ -28,8 +28,8 @@ $ docker-compose up -d
 2. Run this below syntax
 $ ./jmeter -Jusers=50 -Jrampup=50 -Jhold=50 -Jrampdown=50 -n -t "${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/testscenario/Odoo_Login_Scenario_Recorder.jmx"  -l "${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/bin/htmlreport/Odoo_Login_Scenario_Recorder.jtl" -e -o "${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/bin/htmlreport/"
 
-
 or
+
 > jmeter -Jusers=50 -Jrampup=50 -Jhold=50 -Jrampdown=50 -n -t "${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/testscenario/Odoo_Login_Scenario_Recorder.jmx"  -l "${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/bin/htmlreport/Odoo_Login_Scenario_Recorder.jtl" -e -o "${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/bin/htmlreport/"
 
 ```

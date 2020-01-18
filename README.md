@@ -19,9 +19,7 @@ $ docker-compose up -d
 
 ###### Download and Install JMeter
 [Download JMeter](https://jmeter.apache.org/download_jmeter.cgi)
-[Download JMeter](https://jmeter.apache.org/download_jmeter.cgi)
-
-[Install JMeter] (https://www.edureka.co/blog/how-to-install-jmeter)
+[Install JMeter](https://www.edureka.co/blog/how-to-install-jmeter)
 
 ###### Running server-side load testing demo with JMeter
 ```properties

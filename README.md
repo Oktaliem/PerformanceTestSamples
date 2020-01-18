@@ -40,10 +40,9 @@ ${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/bin/htmlreport/i
 ```
 
 ## GATLING
-[Download & Install](https://gatling.io/docs/current/installation)
 
 ###### Download and Install Gatling
-
+[Download & Install](https://gatling.io/docs/current/installation)
 
 ###### Running server-side load testing demo with Gatling - Web Application
 ```properties

@@ -1,0 +1,14 @@
+POST /web/dataset/call_kw/ir.module.module/load_views HTTP/1.1
+Host: 192.168.1.66
+Connection: keep-alive
+Content-Length: 369
+Accept: application/json, text/javascript, */*; q=0.01
+Origin: http://192.168.1.66
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36
+Content-Type: application/json
+Referer: http://192.168.1.66/web
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=176417d7dc8f4234904cab8ecb9848fe0e157840
+

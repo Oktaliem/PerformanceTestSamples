@@ -1,0 +1,11 @@
+[t5]
+FileName1=t5_web.assets_common_minimal_js.html
+URL1=http://192.168.1.66/web/content/432-178fe0e/web.assets_common_minimal_js.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_5.xml
+RequestHeaderFile=t5_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t5_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

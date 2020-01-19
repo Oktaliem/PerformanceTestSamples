@@ -1,0 +1,11 @@
+[t16]
+FileName1=t16_3a817ef468b1400ba3be1854ee2435433468d582.xml
+URL1=http://192.168.1.66/web/webclient/qweb/3a817ef468b1400ba3be1854ee2435433468d582?mods=base,web,base_import,web_diagram,web_editor,web_kanban_gauge,web_tour
+Total=1
+ContentType=text/xml
+SnapshotXmlFile=snapshot_16.xml
+RequestHeaderFile=t16_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t16_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

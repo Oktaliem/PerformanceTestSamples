@@ -1,0 +1,11 @@
+[t74]
+FileName1=t74_icon.png
+URL1=http://192.168.1.66/fleet/static/description/icon.png
+Total=1
+ContentType=image/png
+SnapshotXmlFile=snapshot_74.xml
+RequestHeaderFile=t74_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t74_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,11 @@
+[t13]
+FileName1=t13_web.assets_common.html
+URL1=http://192.168.1.66/web/content/437-3c01eea/web.assets_common.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_13.xml
+RequestHeaderFile=t13_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t13_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

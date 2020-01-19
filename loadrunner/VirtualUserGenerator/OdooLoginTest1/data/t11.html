@@ -1,0 +1,73 @@
+
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="utf-8"/>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+                <title>Odoo</title>
+                <link type="image/x-icon" rel="shortcut icon" href="/web/static/src/img/favicon.ico"/>
+
+                <script type="text/javascript">
+                    var odoo = {
+                        csrf_token: "0fd06480a78d409610850e5b7c9ce55b153dbd11o",
+                        debug: "",
+                    };
+                </script>
+
+                
+                <script type="text/javascript">
+                    odoo.session_info = {"uid": 2, "is_system": true, "is_admin": true, "user_context": {"lang": "en_US", "tz": "Europe/Brussels", "uid": 2, "allowed_company_ids": [1]}, "db": "bitnami_odoo", "server_version": "13.0-20191010", "server_version_info": [13, 0, 0, "final", 0, ""], "name": "Mitchell Admin", "username": "user@example.com", "partner_display_name": "YourCompany, Mitchell Admin", "company_id": 1, "partner_id": 3, "user_companies": {"current_company": [1, "YourCompany"], "allowed_companies": [[1, "YourCompany"]]}, "currencies": {"1": {"symbol": "\u20ac", "position": "after", "digits": [69, 2]}, "2": {"symbol": "$", "position": "before", "digits": [69, 2]}}, "web.base.url": "http://192.168.1.66", "show_effect": true, "display_switch_company_menu": false, "cache_hashes": {"load_menus": "003f16ffa5db0f0bc3d7182bd34ca35055762784", "qweb": "3a817ef468b1400ba3be1854ee2435433468d582", "translations": "026ae15487c2067877f7b82ffb991974c070d399"}, "web_tours": []};
+                    odoo.reloadMenus = function () {
+                        return new Promise(function(resolve, reject) {
+                            function onLoaded() {
+                                resolve(oReq.response);
+                            }
+                            var oReq = new XMLHttpRequest();
+                            oReq.responseType = "json";
+                            oReq.addEventListener("load", onLoaded);
+                            oReq.addEventListener("error", reject);
+                            oReq.open("GET", '/web/webclient/load_menus/' + odoo.session_info.cache_hashes.load_menus);
+                            oReq.send();
+                        });
+                    }
+                    odoo.loadMenusPromise = odoo.reloadMenus();
+                </script>
+                <link type="text/css" rel="stylesheet" href="/web/content/430-3c01eea/web.assets_common.css"/>
+                <link type="text/css" rel="stylesheet" href="/web/content/436-44561e6/web.assets_backend.css"/>
+                <script type="text/javascript" src="/web/content/437-3c01eea/web.assets_common.js"></script>
+                <script type="text/javascript" src="/web/content/438-44561e6/web.assets_backend.js"></script>
+                
+        
+    
+
+                
+                    <!--[if lt IE 10]>
+                        <body class="ie9">
+                    <![endif]-->
+                
+
+                <script type="text/javascript">
+                    odoo.define('web.web_client', function (require) {
+                        var WebClient = require('web.WebClient');
+                        var web_client = new WebClient();
+                        $(function() {
+                            web_client.setElement($(document.body));
+                            web_client.start();
+                        });
+                        return web_client;
+                    });
+                </script>
+            
+            </head>
+            <body class="o_web_client">
+                
+            
+            
+            
+        
+            </body>
+        </html>
+    
+    

@@ -1,0 +1,11 @@
+[t18]
+FileName1=t18_026ae15487c2067877f7b82ffb991974c070d399.json
+URL1=http://192.168.1.66/web/webclient/translations/026ae15487c2067877f7b82ffb991974c070d399?mods=base%2Cweb%2Cbase_import%2Cweb_diagram%2Cweb_editor%2Cweb_kanban_gauge%2Cweb_tour&lang=en_US
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_18.xml
+RequestHeaderFile=t18_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t18_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

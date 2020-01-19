@@ -1,0 +1,11 @@
+[t34]
+FileName1=t34_icon.png
+URL1=http://192.168.1.66/mrp/static/description/icon.png
+Total=1
+ContentType=image/png
+SnapshotXmlFile=snapshot_34.xml
+RequestHeaderFile=t34_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t34_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

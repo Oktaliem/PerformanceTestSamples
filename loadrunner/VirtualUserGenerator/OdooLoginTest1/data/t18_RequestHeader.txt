@@ -1,0 +1,11 @@
+GET /web/webclient/translations/026ae15487c2067877f7b82ffb991974c070d399?mods=base%2Cweb%2Cbase_import%2Cweb_diagram%2Cweb_editor%2Cweb_kanban_gauge%2Cweb_tour&lang=en_US HTTP/1.1
+Host: 192.168.1.66
+Connection: keep-alive
+Accept: */*
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36
+Referer: http://192.168.1.66/web
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: session_id=176417d7dc8f4234904cab8ecb9848fe0e157840
+

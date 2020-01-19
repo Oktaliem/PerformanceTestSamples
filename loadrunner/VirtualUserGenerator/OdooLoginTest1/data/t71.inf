@@ -1,0 +1,11 @@
+[t71]
+FileName1=t71_icon.png
+URL1=http://192.168.1.66/website_hr_recruitment/static/description/icon.png
+Total=1
+ContentType=image/png
+SnapshotXmlFile=snapshot_71.xml
+RequestHeaderFile=t71_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t71_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

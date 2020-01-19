@@ -1,0 +1,10 @@
+HTTP/1.0 200 OK
+Date: Wed, 15 Jan 2020 22:56:56 GMT
+Etag: "wzsdm-1571226494-8619-235930397"
+Cache-Control: max-age=604800, public
+Expires: Wed, 22 Jan 2020 22:56:56 GMT
+Content-Type: image/png
+Content-Length: 8619
+Last-Modified: Wed, 16 Oct 2019 11:48:14 GMT
+Server: Werkzeug/0.14.1 Python/3.6.9
+

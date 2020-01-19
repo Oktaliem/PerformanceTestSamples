@@ -1,0 +1,11 @@
+[t67]
+FileName1=t67_icon.png
+URL1=http://192.168.1.66/lunch/static/description/icon.png
+Total=1
+ContentType=image/png
+SnapshotXmlFile=snapshot_67.xml
+RequestHeaderFile=t67_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t67_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

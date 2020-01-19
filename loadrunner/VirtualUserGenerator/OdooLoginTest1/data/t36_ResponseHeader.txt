@@ -1,0 +1,10 @@
+HTTP/1.0 200 OK
+Content-Type: image/x-icon
+X-Content-Type-Options: nosniff
+ETag: 2f7028932480cdcb927f83b0165d577669e620fa
+Cache-Control: max-age=0
+Content-Length: 1150
+Set-Cookie: session_id=176417d7dc8f4234904cab8ecb9848fe0e157840; Expires=Tue, 14-Apr-2020 22:56:57 GMT; Max-Age=7776000; HttpOnly; Path=/
+Server: Werkzeug/0.14.1 Python/3.6.9
+Date: Wed, 15 Jan 2020 22:56:57 GMT
+

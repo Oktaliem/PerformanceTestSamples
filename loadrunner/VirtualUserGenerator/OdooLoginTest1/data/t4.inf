@@ -1,0 +1,11 @@
+[t4]
+FileName1=t4_web.assets_frontend_minimal_js.html
+URL1=http://192.168.1.66/web/content/433-4fef38a/web.assets_frontend_minimal_js.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_4.xml
+RequestHeaderFile=t4_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t4_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

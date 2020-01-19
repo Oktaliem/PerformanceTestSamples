@@ -1,0 +1,8 @@
+HTTP/1.0 200 OK
+Content-Type: application/javascript
+Cache-Control: max-age=604800
+Content-Length: 0
+Set-Cookie: session_id=bae31c43845c5d8fe6c1963dc4df4d32cf9be7f3; Expires=Tue, 14-Apr-2020 22:56:30 GMT; Max-Age=7776000; HttpOnly; Path=/
+Server: Werkzeug/0.14.1 Python/3.6.9
+Date: Wed, 15 Jan 2020 22:56:30 GMT
+

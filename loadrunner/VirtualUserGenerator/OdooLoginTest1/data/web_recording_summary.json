@@ -1,0 +1,1676 @@
+{
+  "FilterHeaders": [
+    {
+      "Header": "x-requested-with",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "user-agent",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "upgrade-insecure-requests",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "origin",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "cache-control",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept-language",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept-encoding",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept",
+      "IncludeInScript": false
+    }
+  ],
+  "FilterResources": [
+    {
+      "IsNonResource": true,
+      "type": "text/xml"
+    },
+    {
+      "IsNonResource": false,
+      "type": "text/plain"
+    },
+    {
+      "IsNonResource": true,
+      "type": "text/html"
+    },
+    {
+      "IsNonResource": false,
+      "type": "text/css"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/x-icon"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/png"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/jpeg"
+    },
+    {
+      "IsNonResource": true,
+      "type": "application/json"
+    },
+    {
+      "IsNonResource": false,
+      "type": "application/javascript"
+    }
+  ],
+  "GeneralInfo": {
+    "BrowserVersion": "",
+    "IsWinInetMode": false,
+    "MaxUsedConnections": 79,
+    "RecordedBrowser": "Chrome",
+    "RecordingDate": "Jan-19-2020",
+    "RecordingDuration": 119547,
+    "RecordingMode": "N/A",
+    "RecordingTimeStamp": 1579395707,
+    "RecordingType": "Browser",
+    "TotalBytesReceived": 4745283,
+    "TotalBytesSent": 36549,
+    "TotalRequests": 79,
+    "UserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36"
+  },
+  "HostInfo": [
+    {
+      "DomainName": "poperblocker.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "3.85.58.45",
+          "IncludeInScript": false,
+          "Name": "api2.poperblocker.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 281,
+              "EventId": 109,
+              "HttpStatus": 200,
+              "Size": 43,
+              "URL": "https://api2.poperblocker.com/consts?s=aeb204c39&ver=4.0.8.6"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "mxpnl.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "35.186.235.23",
+          "IncludeInScript": false,
+          "Name": "cdn.mxpnl.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 31,
+              "EventId": 86,
+              "HttpStatus": 304,
+              "Size": 0,
+              "URL": "https://cdn.mxpnl.com/libs/mixpanel-2.2.min.js"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "mixpanel.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "107.178.240.159",
+          "IncludeInScript": false,
+          "Name": "api.mixpanel.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 250,
+              "EventId": 471,
+              "HttpStatus": 200,
+              "Size": 1,
+              "URL": "https://api.mixpanel.com/track/?ip=1&_=1579395744015"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 219,
+              "EventId": 460,
+              "HttpStatus": 200,
+              "Size": 1,
+              "URL": "https://api.mixpanel.com/track/?ip=1&_=1579395733671"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 373,
+              "HttpStatus": 200,
+              "Size": 1247,
+              "URL": "https://api.mixpanel.com/decide/?verbose=1&version=1&lib=web&token=94b5c311692e7c9d03cef9c9a7a32eaf&ip=1&_=1579395733660"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES128-GCM-SHA256",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "gstatic.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.194.94",
+          "IncludeInScript": false,
+          "Name": "www.gstatic.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 46,
+              "EventId": 120,
+              "HttpStatus": 200,
+              "Size": 76,
+              "URL": "https://www.gstatic.com/autofill/hourly/bins.json"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 118,
+              "HttpStatus": 200,
+              "Size": 82,
+              "URL": "https://www.gstatic.com/autofill/weekly/merchants.json"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.194.94",
+          "IncludeInScript": false,
+          "Name": "ssl.gstatic.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/octet-stream",
+              "DownloadTime": 31,
+              "EventId": 361,
+              "HttpStatus": 200,
+              "Size": 77948,
+              "URL": "https://ssl.gstatic.com/safebrowsing/csd/client_model_v5_ext_variation_0.pb"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/octet-stream",
+              "DownloadTime": 15,
+              "EventId": 292,
+              "HttpStatus": 200,
+              "Size": 77948,
+              "URL": "https://ssl.gstatic.com/safebrowsing/csd/client_model_v5_variation_0.pb"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "googleapis.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.194.95",
+          "IncludeInScript": false,
+          "Name": "www.googleapis.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 32,
+              "EventId": 288,
+              "HttpStatus": 200,
+              "Size": 186,
+              "URL": "https://www.googleapis.com/oauth2/v1/userinfo"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 262,
+              "HttpStatus": 200,
+              "Size": 203,
+              "URL": "https://www.googleapis.com/oauth2/v1/userinfo"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 63,
+              "EventId": 188,
+              "HttpStatus": 200,
+              "Size": 191,
+              "URL": "https://www.googleapis.com/oauth2/v1/userinfo"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 63,
+              "EventId": 143,
+              "HttpStatus": 200,
+              "Size": 329,
+              "URL": "https://www.googleapis.com/oauth2/v4/token"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 141,
+              "EventId": 98,
+              "HttpStatus": 200,
+              "Size": 933,
+              "URL": "https://www.googleapis.com/oauth2/v4/token"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 140,
+              "EventId": 95,
+              "HttpStatus": 200,
+              "Size": 888,
+              "URL": "https://www.googleapis.com/oauth2/v4/token"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 110,
+              "EventId": 93,
+              "HttpStatus": 200,
+              "Size": 950,
+              "URL": "https://www.googleapis.com/oauth2/v4/token"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 94,
+              "EventId": 91,
+              "HttpStatus": 200,
+              "Size": 889,
+              "URL": "https://www.googleapis.com/oauth2/v4/token"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.68.95",
+          "IncludeInScript": false,
+          "Name": "oauthaccountmanager.googleapis.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 63,
+              "EventId": 346,
+              "HttpStatus": 200,
+              "Size": 337,
+              "URL": "https://oauthaccountmanager.googleapis.com/v1/issuetoken"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.24.94",
+          "IncludeInScript": false,
+          "Name": "clientservices.googleapis.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 406,
+              "EventId": 209,
+              "HttpStatus": 304,
+              "Size": 0,
+              "URL": "https://clientservices.googleapis.com/chrome-variations/seed?osname=win&channel=stable&milestone=79"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "google.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.194.95",
+          "IncludeInScript": false,
+          "Name": "signaler-pa.clients6.google.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json+protobuf",
+              "DownloadTime": 375,
+              "EventId": 1246,
+              "HttpStatus": 200,
+              "Size": 76,
+              "URL": "https://signaler-pa.clients6.google.com/v1/subscriptions?key=AIzaSyB1j3mFq6w9iUpl8m8UNezy4TBwy9Eb8b4"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 235,
+              "EventId": 815,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://signaler-pa.clients6.google.com/v1/subscriptions?key=AIzaSyB1j3mFq6w9iUpl8m8UNezy4TBwy9Eb8b4"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.194.193",
+          "IncludeInScript": false,
+          "Name": "m.google.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/x-protobuffer",
+              "DownloadTime": 609,
+              "EventId": 497,
+              "HttpStatus": 403,
+              "Size": 103,
+              "URL": "https://m.google.com/devicemanagement/data/api?retry=false&agent=Google+Chrome+79.0.3945.117(04f0a055010adab4484f7497fbfdbf312c307f1d-refs%2Fbranch-heads%2F3945%40%7B%231019%7D)&apptype=Chrome&deviceid=f7c68535-33c2-45a8-9e4c-2bf74c38eb35&devicetype=2&oauth_token=ya29.IqwBuge3aMxBdrCiQCarcPZiY-mJ9Ku0K2eAVd9BMVqGy0zUnLBS-2fEhk2nIX0JsNgUl3yVgYc95cxClcGl3NHY5xh0R6mumBTRQnqBtEIOH7YNXGeolG5oBNzEbRJ-dxl_-R7Q-4MxHhWhyVkj3RNRl0Y545Ujdc6RMmc8uKXzyUlnbRVGa28VB4-r8u_TzmR3kIAFB4M1X2sOBjPILflmDvsm2VfoPtQNQqlu8g&platform=Windows+NT%7Cx86_64%7C10.0.0&request=register"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.194.100",
+          "IncludeInScript": false,
+          "Name": "hangouts.google.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 406,
+              "EventId": 1327,
+              "HttpStatus": 204,
+              "Size": 0,
+              "URL": "https://hangouts.google.com/webchat/u/0/_/jserror?script=https%3A%2F%2Fhangouts.google.com%2Fwebchat%2Fu%2F0%2Fload%3Fclient%3Dsm%26prop%3DaChromeExtension%26nav%3Dtrue%26fid%3Dgtn-roster-iframe-id-q%26os%3DWin32%26stime%3D1579395738529%26xpc%3D%257B%2522cn%2522%253A%2522hzzfss%2522%252C%2522tp%2522%253A1%252C%2522ifrid%2522%253A%2522gtn-roster-iframe-id-q%2522%252C%2522pu%2522%253A%2522https%253A%252F%252Fhangouts.google.com%252Fwebchat%252Fu%252F0%252F%2522%257D%26ec%3D%255B%2522ci%253Aec%2522%252Ctrue%252Ctrue%252Cfalse%255D%26pvt%3DAMP3uWac2q37qc2skRt5RyDUf1d7UB_ttb12sdkJoVOx8MHneKqPo2x-Eot6xu5xm-ZAldIc0jhL%26href%3Dchrome-extension%253A%252F%252Fnckgahadagoaajjgafhacjanaoiihapd%252Fhost.html%2523%25255B%25252239C9B5E1%252522%252C%252522https%253A%252F%252Fhangouts.google.com%252522%252C%252522en_US%252522%252C%252522o%252522%252C%252522%252522%25255D%253Frel%253D1%26jsmode%3Do%26pos%3Dl%26uiv%3D2%26hl%3Den_US%26hpc%3Dtrue%26hsm%3Dtrue%26hrc%3Dtrue%26pal%3D1%26uqp%3Dfalse%26sl%3Dfalse%26mmoleh%3D36%26fcho%3Dchrome-extension%253A%252F%252Fnckgahadagoaajjgafhacjanaoiihapd%26two%3Dchrome-extension%253A%252F%252Fnckgahadagoaajjgafhacjanaoiihapd%26host%3D1%26zx%3Debuohfag0qrj&error&line=Not%20available"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 594,
+              "EventId": 1255,
+              "HttpStatus": 204,
+              "Size": 0,
+              "URL": "https://hangouts.google.com/webchat/u/0/_/jserror?script=https%3A%2F%2Fhangouts.google.com%2Fwebchat%2Fu%2F0%2Fload%3Fclient%3Dsm%26prop%3DaChromeExtension%26nav%3Dtrue%26fid%3Dgtn-roster-iframe-id-q%26os%3DWin32%26stime%3D1579395738529%26xpc%3D%257B%2522cn%2522%253A%2522hzzfss%2522%252C%2522tp%2522%253A1%252C%2522ifrid%2522%253A%2522gtn-roster-iframe-id-q%2522%252C%2522pu%2522%253A%2522https%253A%252F%252Fhangouts.google.com%252Fwebchat%252Fu%252F0%252F%2522%257D%26ec%3D%255B%2522ci%253Aec%2522%252Ctrue%252Ctrue%252Cfalse%255D%26pvt%3DAMP3uWac2q37qc2skRt5RyDUf1d7UB_ttb12sdkJoVOx8MHneKqPo2x-Eot6xu5xm-ZAldIc0jhL%26href%3Dchrome-extension%253A%252F%252Fnckgahadagoaajjgafhacjanaoiihapd%252Fhost.html%2523%25255B%25252239C9B5E1%252522%252C%252522https%253A%252F%252Fhangouts.google.com%252522%252C%252522en_US%252522%252C%252522o%252522%252C%252522%252522%25255D%253Frel%253D1%26jsmode%3Do%26pos%3Dl%26uiv%3D2%26hl%3Den_US%26hpc%3Dtrue%26hsm%3Dtrue%26hrc%3Dtrue%26pal%3D1%26uqp%3Dfalse%26sl%3Dfalse%26mmoleh%3D36%26fcho%3Dchrome-extension%253A%252F%252Fnckgahadagoaajjgafhacjanaoiihapd%26two%3Dchrome-extension%253A%252F%252Fnckgahadagoaajjgafhacjanaoiihapd%26host%3D1%26zx%3Debuohfag0qrj&error&line=Not%20available"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 531,
+              "EventId": 821,
+              "HttpStatus": 204,
+              "Size": 0,
+              "URL": "https://hangouts.google.com/webchat/u/0/_/jserror?script=https%3A%2F%2Fhangouts.google.com%2Fwebchat%2Fu%2F0%2Fload%3Fclient%3Dsm%26prop%3DaChromeExtension%26nav%3Dtrue%26fid%3Dgtn-roster-iframe-id-q%26os%3DWin32%26stime%3D1579395738529%26xpc%3D%257B%2522cn%2522%253A%2522hzzfss%2522%252C%2522tp%2522%253A1%252C%2522ifrid%2522%253A%2522gtn-roster-iframe-id-q%2522%252C%2522pu%2522%253A%2522https%253A%252F%252Fhangouts.google.com%252Fwebchat%252Fu%252F0%252F%2522%257D%26ec%3D%255B%2522ci%253Aec%2522%252Ctrue%252Ctrue%252Cfalse%255D%26pvt%3DAMP3uWac2q37qc2skRt5RyDUf1d7UB_ttb12sdkJoVOx8MHneKqPo2x-Eot6xu5xm-ZAldIc0jhL%26href%3Dchrome-extension%253A%252F%252Fnckgahadagoaajjgafhacjanaoiihapd%252Fhost.html%2523%25255B%25252239C9B5E1%252522%252C%252522https%253A%252F%252Fhangouts.google.com%252522%252C%252522en_US%252522%252C%252522o%252522%252C%252522%252522%25255D%253Frel%253D1%26jsmode%3Do%26pos%3Dl%26uiv%3D2%26hl%3Den_US%26hpc%3Dtrue%26hsm%3Dtrue%26hrc%3Dtrue%26pal%3D1%26uqp%3Dfalse%26sl%3Dfalse%26mmoleh%3D36%26fcho%3Dchrome-extension%253A%252F%252Fnckgahadagoaajjgafhacjanaoiihapd%26two%3Dchrome-extension%253A%252F%252Fnckgahadagoaajjgafhacjanaoiihapd%26host%3D1%26zx%3Debuohfag0qrj&error=Unknown%20Error%20of%20type%20%22Object%22&line=Not%20available"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 234,
+              "EventId": 819,
+              "HttpStatus": 204,
+              "Size": 0,
+              "URL": "https://hangouts.google.com/webchat/u/0/_/jserror?script=https%3A%2F%2Fhangouts.google.com%2Fwebchat%2Fu%2F0%2Fload%3Fclient%3Dsm%26prop%3DaChromeExtension%26nav%3Dtrue%26fid%3Dgtn-roster-iframe-id-q%26os%3DWin32%26stime%3D1579395738529%26xpc%3D%257B%2522cn%2522%253A%2522hzzfss%2522%252C%2522tp%2522%253A1%252C%2522ifrid%2522%253A%2522gtn-roster-iframe-id-q%2522%252C%2522pu%2522%253A%2522https%253A%252F%252Fhangouts.google.com%252Fwebchat%252Fu%252F0%252F%2522%257D%26ec%3D%255B%2522ci%253Aec%2522%252Ctrue%252Ctrue%252Cfalse%255D%26pvt%3DAMP3uWac2q37qc2skRt5RyDUf1d7UB_ttb12sdkJoVOx8MHneKqPo2x-Eot6xu5xm-ZAldIc0jhL%26href%3Dchrome-extension%253A%252F%252Fnckgahadagoaajjgafhacjanaoiihapd%252Fhost.html%2523%25255B%25252239C9B5E1%252522%252C%252522https%253A%252F%252Fhangouts.google.com%252522%252C%252522en_US%252522%252C%252522o%252522%252C%252522%252522%25255D%253Frel%253D1%26jsmode%3Do%26pos%3Dl%26uiv%3D2%26hl%3Den_US%26hpc%3Dtrue%26hsm%3Dtrue%26hrc%3Dtrue%26pal%3D1%26uqp%3Dfalse%26sl%3Dfalse%26mmoleh%3D36%26fcho%3Dchrome-extension%253A%252F%252Fnckgahadagoaajjgafhacjanaoiihapd%26two%3Dchrome-extension%253A%252F%252Fnckgahadagoaajjgafhacjanaoiihapd%26host%3D1%26zx%3Debuohfag0qrj&error=Unknown%20Error%20of%20type%20%22Object%22&line=Not%20available"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 94,
+              "EventId": 702,
+              "HttpStatus": 200,
+              "Size": 1327,
+              "URL": "https://hangouts.google.com/hangouts/_/hscv?pvt=AMP3uWac2q37qc2skRt5RyDUf1d7UB_ttb12sdkJoVOx8MHneKqPo2x-Eot6xu5xm-ZAldIc0jhL&authuser=0&xpc=%7B%22cn%22%3A%22vG23dVK87w%22%2C%22tp%22%3Anull%2C%22osh%22%3Anull%2C%22ppu%22%3A%22https%3A%2F%2Fhangouts.google.com%2Frobots.txt%22%2C%22lpu%22%3A%22https%3A%2F%2Fhangouts.google.com%2Frobots.txt%22%7D"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 562,
+              "EventId": 566,
+              "HttpStatus": 200,
+              "Size": 3202,
+              "URL": "https://hangouts.google.com/webchat/u/0/_/data?ds.extension=106074807&_reqid=32545&rt=j"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 266,
+              "EventId": 478,
+              "HttpStatus": 200,
+              "Size": 3906,
+              "URL": "https://hangouts.google.com/webchat/u/0/load?client=sm&prop=aChromeExtension&nav=true&fid=gtn-roster-iframe-id-q&os=Win32&stime=1579395738529&xpc=%7B%22cn%22%3A%22hzzfss%22%2C%22tp%22%3A1%2C%22ifrid%22%3A%22gtn-roster-iframe-id-q%22%2C%22pu%22%3A%22https%3A%2F%2Fhangouts.google.com%2Fwebchat%2Fu%2F0%2F%22%7D&ec=%5B%22ci%3Aec%22%2Ctrue%2Ctrue%2Cfalse%5D&pvt=AMP3uWac2q37qc2skRt5RyDUf1d7UB_ttb12sdkJoVOx8MHneKqPo2x-Eot6xu5xm-ZAldIc0jhL&href=chrome-extension%3A%2F%2Fnckgahadagoaajjgafhacjanaoiihapd%2Fhost.html%23%255B%252239C9B5E1%2522%2C%2522https%3A%2F%2Fhangouts.google.com%2522%2C%2522en_US%2522%2C%2522o%2522%2C%2522%2522%255D%3Frel%3D1&jsmode=o&pos=l&uiv=2&hl=en_US&hpc=true&hsm=true&hrc=true&pal=1&uqp=false&sl=false&mmoleh=36&fcho=chrome-extension%3A%2F%2Fnckgahadagoaajjgafhacjanaoiihapd&two=chrome-extension%3A%2F%2Fnckgahadagoaajjgafhacjanaoiihapd&host=1&zx=ebuohfag0qrj"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/plain",
+              "DownloadTime": 203,
+              "EventId": 214,
+              "HttpStatus": 200,
+              "Size": 252,
+              "URL": "https://hangouts.google.com/webchat/extension-start"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.194.113",
+          "IncludeInScript": false,
+          "Name": "clients6.google.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 218,
+              "EventId": 670,
+              "HttpStatus": 304,
+              "Size": 0,
+              "URL": "https://clients6.google.com/voice/v1/users/@me/account?checkHangoutsCallingPermission=false&key=AIzaSyD7InnYR3VKdb4j2rMUEbTCIr2VyEazl6k&locale=en-US&alt=protojson"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/octet-stream",
+              "DownloadTime": 31,
+              "EventId": 623,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://clients6.google.com/voice/v1/users/@me/account?checkHangoutsCallingPermission=false&key=AIzaSyD7InnYR3VKdb4j2rMUEbTCIr2VyEazl6k&locale=en-US&alt=protojson"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.194.139",
+          "IncludeInScript": false,
+          "Name": "clients4.google.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 94,
+              "EventId": 659,
+              "HttpStatus": 200,
+              "Size": 294,
+              "URL": "https://clients4.google.com/invalidation/lcs/client?xpc=%7B%22cn%22%3A%22cvd4NVlCz8%22%2C%22tp%22%3A1%2C%22osh%22%3Anull%2C%22ppu%22%3A%22https%3A%2F%2Fhangouts.google.com%2Frobots.txt%22%2C%22lpu%22%3A%22https%3A%2F%2Fclients4.google.com%2Frobots.txt%22%7D"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 94,
+              "EventId": 637,
+              "HttpStatus": 204,
+              "Size": 0,
+              "URL": "https://clients4.google.com/invalidation/android/request/CHES4QEStwFBUEE5MWJHdzlpc0w5cFQwOFBPNlFsVUU3bDJkSENrc3VDd3RRWTZLci1ocTBuYTVKNDExNjJIOXZIc2h3a0Vad1VPRFJlMEIxS2NLSTVKT29tS1NrcU9Id2VkSURoUTRERHhfZFZrcWRGSnhwYl9tTUhoT0hySHJaWldoY3BqaVk5M2h0MnU4eERHRmtqYnA3dUNyRXZoUFN2QjVMMjFpR0xVTGI3cVZGcGpuVkNmRm5STTlkQzgaACoCCAAyH2NvbS5nb29nbGUuY2hyb21lLmludmFsaWRhdGlvbnM"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 78,
+              "EventId": 619,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://clients4.google.com/invalidation/lcs/client?xpc=%7B%22cn%22%3A%22usql1nV1nl%22%2C%22tp%22%3Anull%2C%22osh%22%3Anull%2C%22ppu%22%3A%22https%3A%2F%2Fhangouts.google.com%2Frobots.txt%22%2C%22lpu%22%3A%22https%3A%2F%2Fclients4.google.com%2Frobots.txt%22%7D"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/vnd.google.octet-stream-compressible",
+              "DownloadTime": 78,
+              "EventId": 299,
+              "HttpStatus": 200,
+              "Size": 55,
+              "URL": "https://clients4.google.com/chrome-sync/command/?client=Google+Chrome&client_id=u7DloHJIhr2qhGTZjyZv8g%3D%3D"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.194.113",
+          "IncludeInScript": false,
+          "Name": "clients2.google.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 1625,
+              "EventId": 1365,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://clients2.google.com/cr/staging_perf?product=Google_Hangouts_Chrome&url=%2Fhost.html&version=nckgahadagoaajjgafhacjanaoiihapd&total_js_heap_size_mb_1m_raw=10&used_js_heap_size_mb_1m_raw=10"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 1578,
+              "EventId": 1334,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://clients2.google.com/cr/staging_perf?product=Google_Hangouts_Chrome&url=%2F_generated_background_page.html&version=nckgahadagoaajjgafhacjanaoiihapd&total_js_heap_size_mb_1m_raw=10&used_js_heap_size_mb_1m_raw=10"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.194.101",
+          "IncludeInScript": false,
+          "Name": "clients1.google.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/proto",
+              "DownloadTime": 63,
+              "EventId": 1383,
+              "HttpStatus": 200,
+              "Size": 25,
+              "URL": "https://clients1.google.com/tbproxy/af/query?q=Chc2LjEuMTcxNS4xNDQyL2VuIChHR0xMKRMZMP5aDzJsimAjLZFhlU4kFA=="
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/proto",
+              "DownloadTime": 32,
+              "EventId": 468,
+              "HttpStatus": 200,
+              "Size": 39,
+              "URL": "https://clients1.google.com/tbproxy/af/query?q=Chc2LjEuMTcxNS4xNDQyL2VuIChHR0xMKRMZ2itDSjPoGGcjLShLLYkkIy3OQUx6JBQ="
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.24.113",
+          "IncludeInScript": false,
+          "Name": "apis.google.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 281,
+              "EventId": 732,
+              "HttpStatus": 304,
+              "Size": 0,
+              "URL": "https://apis.google.com/js/client.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 281,
+              "EventId": 724,
+              "HttpStatus": 200,
+              "Size": 4839,
+              "URL": "https://apis.google.com/js/api.js"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.194.84",
+          "IncludeInScript": false,
+          "Name": "accounts.google.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 63,
+              "EventId": 88,
+              "HttpStatus": 200,
+              "Size": 254,
+              "URL": "https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.24.189",
+          "IncludeInScript": false,
+          "Name": "21.client-channel.google.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/plain",
+              "DownloadTime": 31,
+              "EventId": 775,
+              "HttpStatus": 200,
+              "Size": 30,
+              "URL": "https://21.client-channel.google.com/client-channel/channel/bind?ctype=hangouts&prop=aChromeExtension&appver=babel-chat.frontend_20200113.06_p0&gsessionid=Mq9t8zaVBKukb3UHbmWRnmTGzTs88xKf&VER=8&SID=F8CB8915155B61A4&RID=19489&AID=2&zx=awet22os2ali&t=1"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 62,
+              "EventId": 752,
+              "HttpStatus": 200,
+              "Size": 1720,
+              "URL": "https://21.client-channel.google.com/client-channel/channel/bind?ctype=hangouts&prop=aChromeExtension&appver=babel-chat.frontend_20200113.06_p0&gsessionid=Mq9t8zaVBKukb3UHbmWRnmTGzTs88xKf&VER=8&RID=rpc&SID=F8CB8915155B61A4&CI=0&AID=0&TYPE=xmlhttp&zx=r4v49k6p0ry0&t=1"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/plain",
+              "DownloadTime": 172,
+              "EventId": 749,
+              "HttpStatus": 200,
+              "Size": 57,
+              "URL": "https://21.client-channel.google.com/client-channel/channel/bind?ctype=hangouts&prop=aChromeExtension&appver=babel-chat.frontend_20200113.06_p0&gsessionid=Mq9t8zaVBKukb3UHbmWRnmTGzTs88xKf&VER=8&RID=19488&CVER=5&zx=lo55xajprjy8&t=1"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 63,
+              "EventId": 741,
+              "HttpStatus": 200,
+              "Size": 6,
+              "URL": "https://21.client-channel.google.com/client-channel/channel/cbp?ctype=hangouts&prop=aChromeExtension&appver=babel-chat.frontend_20200113.06_p0&gsessionid=Mq9t8zaVBKukb3UHbmWRnmTGzTs88xKf&VER=8&TYPE=xmlhttp&zx=ioihjg3phg22&t=1"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/plain",
+              "DownloadTime": 32,
+              "EventId": 737,
+              "HttpStatus": 200,
+              "Size": 25,
+              "URL": "https://21.client-channel.google.com/client-channel/channel/cbp?ctype=hangouts&prop=aChromeExtension&appver=babel-chat.frontend_20200113.06_p0&gsessionid=Mq9t8zaVBKukb3UHbmWRnmTGzTs88xKf&VER=8&MODE=init&zx=7qwua3g60jqu&t=1"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 94,
+              "EventId": 734,
+              "HttpStatus": 200,
+              "Size": 61,
+              "URL": "https://21.client-channel.google.com/client-channel/gsid"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/javascript",
+              "DownloadTime": 16,
+              "EventId": 728,
+              "HttpStatus": 200,
+              "Size": 61,
+              "URL": "https://21.client-channel.google.com/client-channel/gsid"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 62,
+              "EventId": 717,
+              "HttpStatus": 200,
+              "Size": 584,
+              "URL": "https://21.client-channel.google.com/client-channel/client?cfg=%7B%222%22%3A%22hangouts%22%2C%226%22%3A%22aChromeExtension%22%2C%227%22%3A%22babel-chat.frontend_20200113.06_p0%22%2C%228%22%3Afalse%2C%2213%22%3Afalse%7D&ctype=hangouts&xpc=%7B%22cn%22%3A%22OFxemefVwD%22%2C%22tp%22%3A1%2C%22osh%22%3Anull%2C%22ppu%22%3A%22https%3A%2F%2Fhangouts.google.com%2Frobots.txt%22%2C%22lpu%22%3A%22https%3A%2F%2F21.client-channel.google.com%2Frobots.txt%22%7D"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/javascript",
+              "DownloadTime": 32,
+              "EventId": 676,
+              "HttpStatus": 200,
+              "Size": 40503,
+              "URL": "https://21.client-channel.google.com/client-channel/js/3186969610-lcs_client_bin.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 31,
+              "EventId": 654,
+              "HttpStatus": 200,
+              "Size": 585,
+              "URL": "https://21.client-channel.google.com/client-channel/client?cfg=%7B%222%22%3A%22hangouts%22%2C%226%22%3A%22aChromeExtension%22%2C%227%22%3A%22babel-chat.frontend_20200113.06_p0%22%2C%228%22%3Afalse%2C%2213%22%3Afalse%7D&ctype=hangouts&xpc=%7B%22cn%22%3A%22JPJM5Sj9ee%22%2C%22tp%22%3A1%2C%22osh%22%3Anull%2C%22ppu%22%3A%22https%3A%2F%2Fhangouts.google.com%2Frobots.txt%22%2C%22lpu%22%3A%22https%3A%2F%2F21.client-channel.google.com%2Frobots.txt%22%7D"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 47,
+              "EventId": 614,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "https://21.client-channel.google.com/client-channel/client?cfg=%7B%222%22%3A%22hangouts%22%2C%226%22%3A%22aChromeExtension%22%2C%227%22%3A%22babel-chat.frontend_20200113.06_p0%22%2C%228%22%3Afalse%2C%2213%22%3Afalse%7D&ctype=hangouts&xpc=%7B%22cn%22%3A%22ukiz4cEUVp%22%2C%22tp%22%3Anull%2C%22osh%22%3Anull%2C%22ppu%22%3A%22https%3A%2F%2Fhangouts.google.com%2Frobots.txt%22%2C%22lpu%22%3A%22https%3A%2F%2F21.client-channel.google.com%2Frobots.txt%22%7D"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "google-analytics.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "172.217.160.46",
+          "IncludeInScript": false,
+          "Name": "www.google-analytics.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 31,
+              "EventId": 279,
+              "HttpStatus": 200,
+              "Size": 35,
+              "URL": "https://www.google-analytics.com/collect?v=1&_v=j79&a=883367619&t=pageview&_s=1&dl=chrome-extension%3A%2F%2Fadkfgdipgpojicddmeecncgapbomhjjl%2F_generated_background_page.html&dp=background_page&ul=en-us&de=UTF-8&sd=24-bit&sr=1920x1080&vp=&je=0&_u=QCCAgEAB~&jid=1666723664&gjid=140191167&cid=1478185195.1567851163&tid=UA-130555377-2&_gid=1962064833.1579391734&z=2143436872"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/javascript",
+              "DownloadTime": 62,
+              "EventId": 149,
+              "HttpStatus": 200,
+              "Size": 17803,
+              "URL": "https://www.google-analytics.com/analytics.js"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/javascript",
+              "DownloadTime": 16,
+              "EventId": 134,
+              "HttpStatus": 200,
+              "Size": 17803,
+              "URL": "https://www.google-analytics.com/analytics.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 47,
+              "EventId": 116,
+              "HttpStatus": 304,
+              "Size": 0,
+              "URL": "https://www.google-analytics.com/analytics.js"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "doubleclick.net",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "74.125.130.156",
+          "IncludeInScript": false,
+          "Name": "stats.g.doubleclick.net",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 79,
+              "EventId": 443,
+              "HttpStatus": 200,
+              "Size": 35,
+              "URL": "https://stats.g.doubleclick.net/r/collect?t=dc&aip=1&_r=3&v=1&_v=j79&tid=UA-130555377-2&cid=1478185195.1567851163&jid=1666723664&gjid=140191167&_gid=1962064833.1579391734&_u=QCCAgEAB~&z=107943643"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "adblockplus.org",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "144.76.20.58",
+          "IncludeInScript": false,
+          "Name": "easylist-downloads.adblockplus.org",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/plain",
+              "DownloadTime": 453,
+              "EventId": 1401,
+              "HttpStatus": 200,
+              "Size": 22089,
+              "URL": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt?addonName=adblockforchrome&addonVersion=4.1.0&application=chrome&applicationVersion=79.0.3945.117&platform=chromium&platformVersion=79.0.3945.117&lastVersion=202001182350&downloadCount=4%2B"
+            },
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/plain",
+              "DownloadTime": 407,
+              "EventId": 1342,
+              "HttpStatus": 200,
+              "Size": 22089,
+              "URL": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt?addonName=adblockpluschrome&addonVersion=3.7&application=chrome&applicationVersion=79.0.3945.117&platform=chromium&platformVersion=79.0.3945.117&lastVersion=202001182350&downloadCount=4%2B"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 234,
+              "EventId": 1257,
+              "HttpStatus": 307,
+              "Size": 473,
+              "URL": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt?addonName=adblockforchrome&addonVersion=4.1.0&application=chrome&applicationVersion=79.0.3945.117&platform=chromium&platformVersion=79.0.3945.117&lastVersion=202001182350&downloadCount=4%2B"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 0,
+              "EventId": 1241,
+              "HttpStatus": 307,
+              "Size": 472,
+              "URL": "https://easylist-downloads.adblockplus.org/abp-filters-anti-cv.txt?addonName=adblockpluschrome&addonVersion=3.7&application=chrome&applicationVersion=79.0.3945.117&platform=chromium&platformVersion=79.0.3945.117&lastVersion=202001182350&downloadCount=4%2B"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES256-GCM-SHA384",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "192.168.1.66",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.0",
+          "IP": "192.168.1.66",
+          "IncludeInScript": true,
+          "Name": "192.168.1.66",
+          "Port": 80,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 47,
+              "EventId": 1664,
+              "HttpStatus": 200,
+              "Size": 4530,
+              "URL": "http://192.168.1.66/base/static/img/icons/web_mobile.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 281,
+              "EventId": 1660,
+              "HttpStatus": 200,
+              "Size": 9681,
+              "URL": "http://192.168.1.66/repair/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 32,
+              "EventId": 1657,
+              "HttpStatus": 200,
+              "Size": 8095,
+              "URL": "http://192.168.1.66/im_livechat/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 47,
+              "EventId": 1645,
+              "HttpStatus": 200,
+              "Size": 10337,
+              "URL": "http://192.168.1.66/website_event/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 47,
+              "EventId": 1641,
+              "HttpStatus": 200,
+              "Size": 8327,
+              "URL": "http://192.168.1.66/fleet/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 109,
+              "EventId": 1637,
+              "HttpStatus": 200,
+              "Size": 9088,
+              "URL": "http://192.168.1.66/website_forum/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 140,
+              "EventId": 1633,
+              "HttpStatus": 200,
+              "Size": 8114,
+              "URL": "http://192.168.1.66/website_blog/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1625,
+              "HttpStatus": 200,
+              "Size": 7607,
+              "URL": "http://192.168.1.66/website_hr_recruitment/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1623,
+              "HttpStatus": 200,
+              "Size": 7775,
+              "URL": "http://192.168.1.66/website_slides/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1616,
+              "HttpStatus": 200,
+              "Size": 9180,
+              "URL": "http://192.168.1.66/calendar/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 16,
+              "EventId": 1608,
+              "HttpStatus": 200,
+              "Size": 8072,
+              "URL": "http://192.168.1.66/maintenance/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 47,
+              "EventId": 1603,
+              "HttpStatus": 200,
+              "Size": 8870,
+              "URL": "http://192.168.1.66/lunch/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 47,
+              "EventId": 1596,
+              "HttpStatus": 200,
+              "Size": 1603,
+              "URL": "http://192.168.1.66/base/static/img/icons/marketing_automation.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1591,
+              "HttpStatus": 200,
+              "Size": 10108,
+              "URL": "http://192.168.1.66/mass_mailing/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 47,
+              "EventId": 1586,
+              "HttpStatus": 200,
+              "Size": 10424,
+              "URL": "http://192.168.1.66/survey/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 32,
+              "EventId": 1583,
+              "HttpStatus": 200,
+              "Size": 3240,
+              "URL": "http://192.168.1.66/base/static/img/icons/voip.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 16,
+              "EventId": 1577,
+              "HttpStatus": 200,
+              "Size": 5153,
+              "URL": "http://192.168.1.66/base/static/img/icons/website_calendar.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 32,
+              "EventId": 1571,
+              "HttpStatus": 200,
+              "Size": 2202,
+              "URL": "http://192.168.1.66/base/static/img/icons/sign.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 203,
+              "EventId": 1562,
+              "HttpStatus": 200,
+              "Size": 2649,
+              "URL": "http://192.168.1.66/base/static/img/icons/sale_subscription.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 15,
+              "EventId": 1559,
+              "HttpStatus": 200,
+              "Size": 2030,
+              "URL": "http://192.168.1.66/base/static/img/icons/sale_ebay.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 47,
+              "EventId": 1550,
+              "HttpStatus": 200,
+              "Size": 1635,
+              "URL": "http://192.168.1.66/base/static/img/icons/project_forecast.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1547,
+              "HttpStatus": 200,
+              "Size": 6647,
+              "URL": "http://192.168.1.66/mass_mailing_sms/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 16,
+              "EventId": 1544,
+              "HttpStatus": 200,
+              "Size": 8279,
+              "URL": "http://192.168.1.66/mail/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 47,
+              "EventId": 1537,
+              "HttpStatus": 200,
+              "Size": 7646,
+              "URL": "http://192.168.1.66/hr_skills/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1533,
+              "HttpStatus": 200,
+              "Size": 9961,
+              "URL": "http://192.168.1.66/hr_holidays/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 16,
+              "EventId": 1525,
+              "HttpStatus": 200,
+              "Size": 2305,
+              "URL": "http://192.168.1.66/base/static/img/icons/hr_appraisal.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 16,
+              "EventId": 1520,
+              "HttpStatus": 200,
+              "Size": 7589,
+              "URL": "http://192.168.1.66/contacts/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1514,
+              "HttpStatus": 200,
+              "Size": 9168,
+              "URL": "http://192.168.1.66/board/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1510,
+              "HttpStatus": 200,
+              "Size": 9064,
+              "URL": "http://192.168.1.66/hr_expense/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1503,
+              "HttpStatus": 200,
+              "Size": 9639,
+              "URL": "http://192.168.1.66/hr_recruitment/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 15,
+              "EventId": 1498,
+              "HttpStatus": 200,
+              "Size": 8577,
+              "URL": "http://192.168.1.66/hr_attendance/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1492,
+              "HttpStatus": 200,
+              "Size": 7646,
+              "URL": "http://192.168.1.66/hr/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1484,
+              "HttpStatus": 200,
+              "Size": 5202,
+              "URL": "http://192.168.1.66/base/static/img/icons/helpdesk.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1480,
+              "HttpStatus": 200,
+              "Size": 7623,
+              "URL": "http://192.168.1.66/purchase/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1476,
+              "HttpStatus": 200,
+              "Size": 7194,
+              "URL": "http://192.168.1.66/website_sale/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 203,
+              "EventId": 1467,
+              "HttpStatus": 200,
+              "Size": 8138,
+              "URL": "http://192.168.1.66/note/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 219,
+              "EventId": 1465,
+              "HttpStatus": 200,
+              "Size": 6876,
+              "URL": "http://192.168.1.66/point_of_sale/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 203,
+              "EventId": 1462,
+              "HttpStatus": 200,
+              "Size": 3148,
+              "URL": "http://192.168.1.66/base/static/img/icons/web_studio.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 16,
+              "EventId": 1452,
+              "HttpStatus": 200,
+              "Size": 9214,
+              "URL": "http://192.168.1.66/sale_management/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/x-icon",
+              "DownloadTime": 46,
+              "EventId": 1446,
+              "HttpStatus": 200,
+              "Size": 1150,
+              "URL": "http://192.168.1.66/web/image/res.company/1/favicon/"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1443,
+              "HttpStatus": 200,
+              "Size": 8970,
+              "URL": "http://192.168.1.66/base/static/img/icons/quality_control.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1434,
+              "HttpStatus": 200,
+              "Size": 9731,
+              "URL": "http://192.168.1.66/base/static/img/icons/mrp_plm.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/x-icon",
+              "DownloadTime": 47,
+              "EventId": 1429,
+              "HttpStatus": 200,
+              "Size": 1150,
+              "URL": "http://192.168.1.66/web/image/res.company/1/favicon/"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 47,
+              "EventId": 1424,
+              "HttpStatus": 200,
+              "Size": 3570,
+              "URL": "http://192.168.1.66/base/static/img/icons/mrp_workorder.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 32,
+              "EventId": 1422,
+              "HttpStatus": 200,
+              "Size": 8088,
+              "URL": "http://192.168.1.66/mrp/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 47,
+              "EventId": 1414,
+              "HttpStatus": 200,
+              "Size": 9117,
+              "URL": "http://192.168.1.66/account/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 32,
+              "EventId": 1412,
+              "HttpStatus": 200,
+              "Size": 1723,
+              "URL": "http://192.168.1.66/base/static/img/icons/account_accountant.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 125,
+              "EventId": 1394,
+              "HttpStatus": 200,
+              "Size": 8047,
+              "URL": "http://192.168.1.66/stock/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 109,
+              "EventId": 1392,
+              "HttpStatus": 200,
+              "Size": 4151,
+              "URL": "http://192.168.1.66/base/static/img/icons/timesheet_grid.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 94,
+              "EventId": 1389,
+              "HttpStatus": 200,
+              "Size": 1672,
+              "URL": "http://192.168.1.66/base/static/img/icons/stock_barcode.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 78,
+              "EventId": 1381,
+              "HttpStatus": 200,
+              "Size": 8619,
+              "URL": "http://192.168.1.66/project/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 32,
+              "EventId": 1361,
+              "HttpStatus": 200,
+              "Size": 10946,
+              "URL": "http://192.168.1.66/website/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1357,
+              "HttpStatus": 200,
+              "Size": 10122,
+              "URL": "http://192.168.1.66/crm/static/description/icon.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 31,
+              "EventId": 1348,
+              "HttpStatus": 200,
+              "Size": 14215,
+              "URL": "http://192.168.1.66/web/dataset/search_read"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 63,
+              "EventId": 1336,
+              "HttpStatus": 200,
+              "Size": 41509,
+              "URL": "http://192.168.1.66/web/dataset/call_kw/ir.module.module/load_views"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 62,
+              "EventId": 1329,
+              "HttpStatus": 200,
+              "Size": 3371,
+              "URL": "http://192.168.1.66/web/action/load"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 46,
+              "EventId": 1315,
+              "HttpStatus": 200,
+              "Size": 77160,
+              "URL": "http://192.168.1.66/web/static/lib/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 94,
+              "EventId": 1310,
+              "HttpStatus": 200,
+              "Size": 4643,
+              "URL": "http://192.168.1.66/web/image?model=res.users&field=image_128&id=2"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 32,
+              "EventId": 1307,
+              "HttpStatus": 200,
+              "Size": 78,
+              "URL": "http://192.168.1.66/web/dataset/call_kw/res.users/read"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 62,
+              "EventId": 1300,
+              "HttpStatus": 200,
+              "Size": 453,
+              "URL": "http://192.168.1.66/web/static/src/img/user_menu_avatar.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 15,
+              "EventId": 1291,
+              "HttpStatus": 200,
+              "Size": 280,
+              "URL": "http://192.168.1.66/web/webclient/translations/026ae15487c2067877f7b82ffb991974c070d399?mods=base%2Cweb%2Cbase_import%2Cweb_diagram%2Cweb_editor%2Cweb_kanban_gauge%2Cweb_tour&lang=en_US"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/x-icon",
+              "DownloadTime": 47,
+              "EventId": 1286,
+              "HttpStatus": 200,
+              "Size": 1150,
+              "URL": "http://192.168.1.66/web/image/res.company/1/favicon/"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/xml",
+              "DownloadTime": 78,
+              "EventId": 1263,
+              "HttpStatus": 200,
+              "Size": 173310,
+              "URL": "http://192.168.1.66/web/webclient/qweb/3a817ef468b1400ba3be1854ee2435433468d582?mods=base,web,base_import,web_diagram,web_editor,web_kanban_gauge,web_tour"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 203,
+              "EventId": 898,
+              "HttpStatus": 200,
+              "Size": 1015985,
+              "URL": "http://192.168.1.66/web/content/438-44561e6/web.assets_backend.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 156,
+              "EventId": 892,
+              "HttpStatus": 200,
+              "Size": 26406,
+              "URL": "http://192.168.1.66/web/webclient/load_menus/003f16ffa5db0f0bc3d7182bd34ca35055762784"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 125,
+              "EventId": 888,
+              "HttpStatus": 200,
+              "Size": 1111148,
+              "URL": "http://192.168.1.66/web/content/437-3c01eea/web.assets_common.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/css",
+              "DownloadTime": 32,
+              "EventId": 832,
+              "HttpStatus": 200,
+              "Size": 430848,
+              "URL": "http://192.168.1.66/web/content/436-44561e6/web.assets_backend.css"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 79,
+              "EventId": 810,
+              "HttpStatus": 200,
+              "Size": 3871,
+              "URL": "http://192.168.1.66/web"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 204,
+              "EventId": 803,
+              "HttpStatus": 303,
+              "Size": 215,
+              "URL": "http://192.168.1.66/web/login"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 47,
+              "EventId": 678,
+              "HttpStatus": 200,
+              "Size": 0,
+              "URL": "http://192.168.1.66/web/webclient/locale/en_US"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 47,
+              "EventId": 673,
+              "HttpStatus": 200,
+              "Size": 275,
+              "URL": "http://192.168.1.66/web/webclient/translations/1579395754836?mods=&lang="
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 47,
+              "EventId": 634,
+              "HttpStatus": 200,
+              "Size": 10832,
+              "URL": "http://192.168.1.66/web/content/435-a16725c/web.assets_frontend_lazy.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 63,
+              "EventId": 458,
+              "HttpStatus": 200,
+              "Size": 1091933,
+              "URL": "http://192.168.1.66/web/content/434-383b496/web.assets_common_lazy.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 78,
+              "EventId": 335,
+              "HttpStatus": 200,
+              "Size": 8698,
+              "URL": "http://192.168.1.66/web/binary/company_logo"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 203,
+              "EventId": 205,
+              "HttpStatus": 200,
+              "Size": 19667,
+              "URL": "http://192.168.1.66/web/content/432-178fe0e/web.assets_common_minimal_js.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/javascript",
+              "DownloadTime": 141,
+              "EventId": 201,
+              "HttpStatus": 200,
+              "Size": 2518,
+              "URL": "http://192.168.1.66/web/content/433-4fef38a/web.assets_frontend_minimal_js.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/css",
+              "DownloadTime": 93,
+              "EventId": 180,
+              "HttpStatus": 200,
+              "Size": 202943,
+              "URL": "http://192.168.1.66/web/content/431-2b2ce13/web.assets_frontend.css"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/css",
+              "DownloadTime": 47,
+              "EventId": 160,
+              "HttpStatus": 200,
+              "Size": 139813,
+              "URL": "http://192.168.1.66/web/content/430-3c01eea/web.assets_common.css"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 78,
+              "EventId": 34,
+              "HttpStatus": 200,
+              "Size": 4270,
+              "URL": "http://192.168.1.66/web/login"
+            }
+          ],
+          "SSLCipher": "None",
+          "SSLVersion": "None"
+        }
+      ],
+      "IncludeInScript": true
+    }
+  ],
+  "WebSocket": {
+    "IncludeInScript": false,
+    "IsScriptIncludeWebSocket": false
+  },
+  "NumberOfCorrelations": 2
+}

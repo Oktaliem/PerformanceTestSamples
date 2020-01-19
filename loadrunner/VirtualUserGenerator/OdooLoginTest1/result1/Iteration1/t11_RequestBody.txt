@@ -1,0 +1,4 @@
+"{"jsonrpc":"2.0","method":"call","params":{"args":[],"model":"ir.module.module","method":"load"
+"_views","kwargs":{"views":[[false,"kanban"],[false,"list"],[false,"form"],[92,"search"]],"opti"
+"ons":{"action_id":35,"toolbar":true,"load_filters":true},"context":{"lang":"en_US","tz":"Europ"
+"e/Brussels","uid":2,"allowed_company_ids":[1],"search_default_app":1}}},"id":489289431}"

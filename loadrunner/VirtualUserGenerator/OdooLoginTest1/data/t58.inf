@@ -1,0 +1,11 @@
+[t58]
+FileName1=t58_project_forecast.png
+URL1=http://192.168.1.66/base/static/img/icons/project_forecast.png
+Total=1
+ContentType=image/png
+SnapshotXmlFile=snapshot_58.xml
+RequestHeaderFile=t58_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t58_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

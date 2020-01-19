@@ -1,0 +1,11 @@
+[t22]
+FileName1=t22_fontawesome-webfont.txt
+URL1=http://192.168.1.66/web/static/lib/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0
+Total=1
+ContentType=text/plain
+SnapshotXmlFile=snapshot_22.xml
+RequestHeaderFile=t22_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t22_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

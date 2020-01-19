@@ -1,0 +1,11 @@
+[t54]
+FileName1=t54_icon.png
+URL1=http://192.168.1.66/hr_holidays/static/description/icon.png
+Total=1
+ContentType=image/png
+SnapshotXmlFile=snapshot_54.xml
+RequestHeaderFile=t54_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t54_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

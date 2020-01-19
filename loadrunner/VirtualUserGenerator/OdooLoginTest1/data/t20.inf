@@ -1,0 +1,11 @@
+[t20]
+FileName1=t20.json
+URL1=http://192.168.1.66/web/dataset/call_kw/res.users/read
+Total=1
+RequestHeaderFile=t20_RequestHeader.txt
+RequestBodyFile=t20_RequestBody.txt
+ResponseHeaderFile=t20_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_20.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

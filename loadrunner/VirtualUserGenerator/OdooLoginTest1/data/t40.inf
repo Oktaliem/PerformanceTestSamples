@@ -1,0 +1,11 @@
+[t40]
+FileName1=t40_icon.png
+URL1=http://192.168.1.66/sale_management/static/description/icon.png
+Total=1
+ContentType=image/png
+SnapshotXmlFile=snapshot_40.xml
+RequestHeaderFile=t40_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t40_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

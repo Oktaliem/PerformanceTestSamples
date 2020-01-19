@@ -1,0 +1,11 @@
+[t32]
+FileName1=t32_account_accountant.png
+URL1=http://192.168.1.66/base/static/img/icons/account_accountant.png
+Total=1
+ContentType=image/png
+SnapshotXmlFile=snapshot_32.xml
+RequestHeaderFile=t32_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t32_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

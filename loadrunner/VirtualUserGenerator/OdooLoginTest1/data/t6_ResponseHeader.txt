@@ -1,0 +1,14 @@
+HTTP/1.0 200 OK
+Content-Type: image/png
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST
+Last-Modified: Sun, 10 Nov 2019 01:35:59 GMT
+Cache-Control: public, max-age=604800
+Expires: Wed, 22 Jan 2020 22:56:13 GMT
+ETag: "odoo-2019-11-10 01:35:59.467219-8698-240190245"
+Date: Wed, 15 Jan 2020 22:56:13 GMT
+Accept-Ranges: none
+Set-Cookie: session_id=bae31c43845c5d8fe6c1963dc4df4d32cf9be7f3; Expires=Tue, 14-Apr-2020 22:56:13 GMT; Max-Age=7776000; HttpOnly; Path=/
+Connection: close
+Server: Werkzeug/0.14.1 Python/3.6.9
+

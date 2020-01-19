@@ -1,0 +1,11 @@
+[t17]
+FileName1=t17.ico
+URL1=http://192.168.1.66/web/image/res.company/1/favicon/
+Total=1
+ContentType=image/x-icon
+SnapshotXmlFile=snapshot_17.xml
+RequestHeaderFile=t17_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t17_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

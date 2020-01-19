@@ -1,0 +1,8 @@
+[parameter:NewParam]
+CurrentValue="token"
+IsEncrypt="NO"
+IsServer="NO"
+OriginalValue=""
+ParamName="NewParam"
+Prompt="csrf_token"
+Type="Custom"

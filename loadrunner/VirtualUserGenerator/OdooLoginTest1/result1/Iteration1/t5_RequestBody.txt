@@ -1,0 +1,2 @@
+"csrf_token=98e123c7da0004f624c20ebc3f84cfd026d810afo1579142056&login=user%40example.com&passwo"
+"rd=bitnami&redirect="

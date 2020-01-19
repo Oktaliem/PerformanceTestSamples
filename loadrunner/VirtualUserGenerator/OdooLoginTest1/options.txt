@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\Okta\Documents\SharpDevelop Projects\OdooLoginTest1
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\okta\documents\sharpdevelop projects\odoologintest1\\logfile.log
+c:\users\okta\documents\sharpdevelop projects\odoologintest1\\combined_OdooLoginTest1.c
+c:\users\okta\documents\sharpdevelop projects\odoologintest1\\pre_cci.c

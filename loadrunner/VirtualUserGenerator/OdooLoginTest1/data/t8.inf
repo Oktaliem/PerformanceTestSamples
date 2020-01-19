@@ -1,0 +1,11 @@
+[t8]
+FileName1=t8_web.assets_frontend_lazy.html
+URL1=http://192.168.1.66/web/content/435-a16725c/web.assets_frontend_lazy.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_8.xml
+RequestHeaderFile=t8_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t8_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

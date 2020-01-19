@@ -1,0 +1,11 @@
+[t61]
+FileName1=t61_sign.png
+URL1=http://192.168.1.66/base/static/img/icons/sign.png
+Total=1
+ContentType=image/png
+SnapshotXmlFile=snapshot_61.xml
+RequestHeaderFile=t61_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t61_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

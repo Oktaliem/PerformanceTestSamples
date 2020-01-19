@@ -1,0 +1,68 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: login",
+                "infFile": "t2.inf",
+                "time": 1579405214516
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Url: 1579395754836",
+                "infFile": "t3.inf",
+                "time": 1579405215922
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Submit Data: login_2",
+                "infFile": "t5.inf",
+                "time": 1579405216281
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Url: 003f16ffa5db0f0bc3d7182bd34ca35055762784",
+                "infFile": "t6.inf",
+                "time": 1579405217504
+            },
+            {
+                "stepId": "STEP5",
+                "stepName": "Url: 3a817ef468b1400ba3be1854ee2435433468d582",
+                "infFile": "t7.inf",
+                "time": 1579405218807
+            },
+            {
+                "stepId": "STEP6",
+                "stepName": "Url: 026ae15487c2067877f7b82ffb991974c070d399",
+                "infFile": "t8.inf",
+                "time": 1579405218920
+            },
+            {
+                "stepId": "STEP7",
+                "stepName": "Custom Request: read",
+                "infFile": "t9.inf",
+                "time": 1579405219040
+            },
+            {
+                "stepId": "STEP8",
+                "stepName": "Custom Request: load",
+                "infFile": "t10.inf",
+                "time": 1579405219217
+            },
+            {
+                "stepId": "STEP9",
+                "stepName": "Custom Request: load_views",
+                "infFile": "t11.inf",
+                "time": 1579405219452
+            },
+            {
+                "stepId": "STEP10",
+                "stepName": "Custom Request: search_read",
+                "infFile": "t12.inf",
+                "time": 1579405219519
+            }
+        ],
+        "transactions": []
+    }
+]

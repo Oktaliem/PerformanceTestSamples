@@ -1,0 +1,1070 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Report
+[
+<!ELEMENT Report (General ,(Doc|BPT)) >
+<!ATTLIST Report ver CDATA #REQUIRED tmZone CDATA #REQUIRED>
+
+<!ELEMENT General ( DocLocation ) >
+<!ATTLIST General productName CDATA #REQUIRED productVer CDATA #REQUIRED os CDATA #REQUIRED host CDATA #REQUIRED qcserver CDATA #IMPLIED qcproject CDATA #IMPLIED SolManSolutionId CDATA #IMPLIED SolManProjectId CDATA #IMPLIED SolManTestPlanId CDATA #IMPLIED SolManTestPackageId CDATA #IMPLIED SolManUserInfoData CDATA #IMPLIED  >
+
+<!ELEMENT BPT (DName,Res,DVer?,TSet?,TInst?,NodeArgs,AdditionalInfo*,Doc*) >
+<!ATTLIST BPT rID ID #REQUIRED >
+
+<!ELEMENT Doc (DName,ConfName?,Res,DVer?,TSet?,TInst?,RunType?,DT?,AdditionalInfo*,Step*,DIter*,Step*,Action*,Doc*,Summary?,TestMaintenanceSummary*,NodeArgs?) >
+<!ATTLIST Doc rID ID #REQUIRED type (Test|BC|BPTWrapperTest|Flow|Group|Action) "Test" productName CDATA #REQUIRED BCIter CDATA #IMPLIED >
+
+<!ELEMENT RunType ( #PCDATA )>
+<!ATTLIST RunType fmStep (False|True) "False" batch (False|True) "False" upDesc (False|True) "False" upChk (False|True) "False" upAS (False|True) "False">
+
+<!ELEMENT DName ( #PCDATA ) >
+
+<!ELEMENT ConfName ( #PCDATA ) >
+
+<!ELEMENT Res ( #PCDATA ) >
+
+<!ELEMENT AdditionalInfo (AdditionalDataName,AdditionalDataValue ) >
+
+<!ELEMENT AdditionalDataName ( #PCDATA ) >
+
+<!ELEMENT AdditionalDataValue ( #PCDATA ) >
+
+<!ELEMENT DVer ( #PCDATA ) >
+
+<!ELEMENT TSet ( #PCDATA ) >
+
+<!ELEMENT TInst ( #PCDATA ) >
+
+<!ELEMENT DIter (Step*,Action+,Summary?,NodeArgs)>
+<!ATTLIST DIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT DocLocation ( #PCDATA )>
+
+<!ELEMENT Action (AName,AIter*,(Step|HtmlStep|Action)*, Summary,ActionMaintenanceSummary*, NodeArgs ) >
+<!ATTLIST Action rID ID #REQUIRED>
+
+<!ELEMENT AIter ((Step|HtmlStep|Action)*,DataMapping?, Summary?,NodeArgs) >
+<!ATTLIST AIter rID ID #REQUIRED iterID CDATA #REQUIRED isCountable (False|True) "False" >
+
+<!ELEMENT AName ( #PCDATA ) >
+
+<!ELEMENT TestMaintenanceSummary (ActionMaintenanceSummary*) >
+<!ATTLIST TestMaintenanceSummary ObjectsAdded CDATA #REQUIRED ObjectsUpdated CDATA #REQUIRED StepsUpdated CDATA #REQUIRED StepsComments CDATA #REQUIRED><!ELEMENT ActionMaintenanceSummary (ObjectChange* ) >
+<!ATTLIST ActionMaintenanceSummary Action CDATA #REQUIRED Objects CDATA #REQUIRED Updated CDATA #REQUIRED LinesTotal CDATA #REQUIRED Added CDATA #REQUIRED LinesUpdated CDATA #REQUIRED>
+
+<!ELEMENT ObjectChange  (Hierarchy, PropertyChangeList* ) >
+<!ATTLIST ObjectChange Operation CDATA #IMPLIED OriginalRepository CDATA #IMPLIED>
+
+<!ELEMENT PropertyChangeList (PropertyDef*) >
+
+<!ELEMENT PropertyDef (OriginalValue, NewValue) >
+<!ATTLIST PropertyDef PropName CDATA #REQUIRED OriginRegularExpression (True|False) "False" NewRegularExpression (True|False) "False" AddedProperty (True|False) "False" >
+
+<!ELEMENT OriginalValue ( #PCDATA )>
+
+<!ELEMENT NewValue ( #PCDATA )>
+
+<!ELEMENT Hierarchy  (ObjectName, Hierarchy*) >
+<!ATTLIST Hierarchy MicClass CDATA #REQUIRED>
+
+<!ELEMENT ObjectName  ( #PCDATA ) >
+
+<!ELEMENT Step (Obj,Details,Time,TimeTick* ,(Step|HtmlStep|Doc)*, DataMapping?, NodeArgs) >
+<!ATTLIST Step rID ID #REQUIRED retval CDATA #IMPLIED>
+
+<!ELEMENT HtmlStep (HTML,TimeTick*,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST HtmlStep rID ID #REQUIRED >
+
+<!ELEMENT Obj ( #PCDATA ) >
+<!ATTLIST Obj plainTxt (False|True) "True">
+
+<!ELEMENT Details ( #PCDATA ) >
+<!ATTLIST Details plainTxt (False|True) "True">
+
+<!ELEMENT Time ( #PCDATA ) >
+
+<!ELEMENT HTML ( #PCDATA ) >
+
+<!ELEMENT Disp ( #PCDATA ) >
+
+<!ELEMENT TimeTick ( #PCDATA ) >
+
+<!ELEMENT DataMapping ( DataMappedItem* )>
+<!ELEMENT DataMappedItem EMPTY >
+<!ATTLIST DataMappedItem dsName CDATA #REQUIRED >
+<!ATTLIST DataMappedItem rowId CDATA #REQUIRED >
+
+<!ELEMENT NodeArgs (Disp,TopPane?,BtmPane?,ExtendedInfo? )>
+<!ATTLIST NodeArgs eType CDATA #REQUIRED icon CDATA #REQUIRED nRep CDATA #REQUIRED UserNote CDATA #IMPLIED filter (False|True) "True">
+<!ATTLIST NodeArgs status (Passed|Failed|Done|Warning|Information) "Done">
+<!ATTLIST NodeArgs iconSel CDATA #IMPLIED nType CDATA #IMPLIED MovieMarker CDATA "">
+<!ATTLIST NodeArgs Source CDATA #IMPLIED SourceLine CDATA #IMPLIED StepFlowItemKey CDATA #IMPLIED >
+
+<!ELEMENT TopPane (Path)>
+
+<!ELEMENT BtmPane ( (Path|WR)?,ASHilite?)>
+<!ATTLIST BtmPane vType CDATA "HTML">
+
+<!ELEMENT Path ( #PCDATA ) >
+
+<!ELEMENT ASHilite ( #PCDATA ) >
+
+<!ELEMENT WR ( #PCDATA ) >
+
+<!ELEMENT ExtendedInfo ( StepData ) >
+
+<!ATTLIST ExtendedInfo StepType CDATA #REQUIRED>
+<!ELEMENT DT (NodeArgs) >
+<!ATTLIST DT rID ID #REQUIRED>
+
+<!ELEMENT Summary (Param*)>
+<!ATTLIST Summary sTime CDATA #IMPLIED eTime CDATA #IMPLIED passed CDATA #IMPLIED failed CDATA #IMPLIED warnings CDATA #IMPLIED retval CDATA #IMPLIED stopped (False|True) "False" >
+
+<!ELEMENT Param (ParamName,ParamVal)+ >
+<!ATTLIST Param paramInOut (In|Out) "In">
+
+<!ELEMENT ParamName ( #PCDATA ) >
+
+<!ELEMENT ParamVal ( #PCDATA ) >
+
+]
+>
+<Report ver="2.0" tmZone="Malay Peninsula Standard Time">
+<General productName="Vugen" productVer="2020" os="" host="DESKTOP-N8TB22F"><DocLocation><![CDATA[C:\Users\Okta\Documents\SharpDevelop Projects\OdooLoginTest1]]></DocLocation></General>
+<Doc rID="T1"   productName= "Vugen"  >
+<DName><![CDATA[OdooLoginTest1]]></DName>
+<Res><![CDATA[result1]]></Res>
+<Action rID="T2">
+<AName><![CDATA[vuser_init]]></AName>
+<Summary sTime="19/1/2020 - 11:40:13" eTime="19/1/2020 - 11:40:13" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="5" >
+<Disp><![CDATA[vuser_init Summary]]></Disp>
+</NodeArgs>
+</Action>
+<DIter rID="T3" iterID="1" >
+<Action rID="T4">
+<AName><![CDATA[Action]]></AName>
+<Step rID="T5">
+<Obj plainTxt="False" ><![CDATA[Service: Add Header]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Add the following header to the next HTTP request :<BR><STRONG><FONT COLOR=#00AF00>Upgrade-Insecure-Requests: 1</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:13]]></Time>
+<TimeTick>1579405213</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="9" >
+<Disp><![CDATA[Service: Add Header]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T6">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param Attrib]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName = <STRONG><FONT COLOR=#00AF00>csrf_token</FONT></STRONG><BR>TagName = <STRONG><FONT COLOR=#00AF00>input</FONT></STRONG><BR>Extract = <STRONG><FONT COLOR=#00AF00>value</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:13]]></Time>
+<TimeTick>1579405213</TimeTick>
+<NodeArgs eType="General" icon="5" nRep="10" >
+<Disp><![CDATA[Service: Reg Save Param Attrib]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T7">
+<Obj plainTxt="False" ><![CDATA[Url: login]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:14]]></Time>
+<TimeTick>1579405214</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="11" status="Passed" >
+<Disp><![CDATA[Url: login]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration1\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T8">
+<Obj plainTxt="False" ><![CDATA[Service: Set Sockets Option]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Set socket option <STRONG><FONT COLOR=#00AF00>SSL_VERSION</FONT></STRONG> with value <STRONG><FONT COLOR=#00AF00>AUTO</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:14]]></Time>
+<TimeTick>1579405214</TimeTick>
+<NodeArgs eType="General" icon="7" nRep="12" >
+<Disp><![CDATA[Service: Set Sockets Option]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T9">
+<Obj plainTxt="False" ><![CDATA[Service: Concurrent Group - start]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Concurrent Group started</CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:14]]></Time>
+<TimeTick>1579405214</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="13" >
+<Disp><![CDATA[Service: Concurrent Group - start]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T10">
+<Obj plainTxt="False" ><![CDATA[Url: web.assets_common.css]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: web.assets_common.css registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:14]]></Time>
+<TimeTick>1579405214</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="14" >
+<Disp><![CDATA[Url: web.assets_common.css]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T11">
+<Obj plainTxt="False" ><![CDATA[Url: web.assets_frontend.css]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: web.assets_frontend.css registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:14]]></Time>
+<TimeTick>1579405214</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="15" >
+<Disp><![CDATA[Url: web.assets_frontend.css]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T12">
+<Obj plainTxt="False" ><![CDATA[Url: web.assets_frontend_minimal_js.js]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: web.assets_frontend_minimal_js.js registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:14]]></Time>
+<TimeTick>1579405214</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="16" >
+<Disp><![CDATA[Url: web.assets_frontend_minimal_js.js]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T13">
+<Obj plainTxt="False" ><![CDATA[Url: web.assets_common_minimal_js.js]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: web.assets_common_minimal_js.js registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:14]]></Time>
+<TimeTick>1579405214</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="17" >
+<Disp><![CDATA[Url: web.assets_common_minimal_js.js]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T14">
+<Obj plainTxt="False" ><![CDATA[Url: company_logo]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: company_logo registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:14]]></Time>
+<TimeTick>1579405214</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="18" >
+<Disp><![CDATA[Url: company_logo]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T15">
+<Obj plainTxt="False" ><![CDATA[Service: Concurrent Group - end]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Concurrent Group ended</CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:14]]></Time>
+<TimeTick>1579405214</TimeTick>
+<NodeArgs eType="General" icon="9" nRep="19" >
+<Disp><![CDATA[Service: Concurrent Group - end]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T16">
+<Obj plainTxt="False" ><![CDATA[Service: Concurrent Group - start]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Concurrent Group started</CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:14]]></Time>
+<TimeTick>1579405214</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="20" >
+<Disp><![CDATA[Service: Concurrent Group - start]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T17">
+<Obj plainTxt="False" ><![CDATA[Url: web.assets_common_lazy.js]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: web.assets_common_lazy.js registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:14]]></Time>
+<TimeTick>1579405214</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="21" >
+<Disp><![CDATA[Url: web.assets_common_lazy.js]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T18">
+<Obj plainTxt="False" ><![CDATA[Url: web.assets_frontend_lazy.js]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: web.assets_frontend_lazy.js registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:14]]></Time>
+<TimeTick>1579405214</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="22" >
+<Disp><![CDATA[Url: web.assets_frontend_lazy.js]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T19">
+<Obj plainTxt="False" ><![CDATA[Service: Concurrent Group - end]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Concurrent Group ended</CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:15]]></Time>
+<TimeTick>1579405215</TimeTick>
+<NodeArgs eType="General" icon="9" nRep="23" >
+<Disp><![CDATA[Service: Concurrent Group - end]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T20">
+<Obj plainTxt="False" ><![CDATA[Service: Add Header]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Add the following header to the next HTTP request :<BR><STRONG><FONT COLOR=#00AF00>X-Requested-With: XMLHttpRequest</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:15]]></Time>
+<TimeTick>1579405215</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="24" >
+<Disp><![CDATA[Service: Add Header]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T21">
+<Obj plainTxt="False" ><![CDATA[Url: 1579395754836]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:15]]></Time>
+<TimeTick>1579405215</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="25" status="Passed" >
+<Disp><![CDATA[Url: 1579395754836]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration1\t3.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T22">
+<Obj plainTxt="False" ><![CDATA[Url: en_US]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Resource loaded successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:15]]></Time>
+<TimeTick>1579405215</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="26" status="Passed" >
+<Disp><![CDATA[Url: en_US]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T23">
+<Obj plainTxt="False" ><![CDATA[Service: Add Header]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Add the following header to the next HTTP request :<BR><STRONG><FONT COLOR=#00AF00>Origin: http://192.168.1.66</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:15]]></Time>
+<TimeTick>1579405215</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="27" >
+<Disp><![CDATA[Service: Add Header]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T24">
+<Obj plainTxt="False" ><![CDATA[Service: Add Header]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Add the following header to the next HTTP request :<BR><STRONG><FONT COLOR=#00AF00>Upgrade-Insecure-Requests: 1</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:15]]></Time>
+<TimeTick>1579405215</TimeTick>
+<NodeArgs eType="General" icon="4" nRep="28" >
+<Disp><![CDATA[Service: Add Header]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T25">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param RegExp]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName = <STRONG><FONT COLOR=#00AF00>token</FONT></STRONG><BR>RegExp = <STRONG><FONT COLOR=#00AF00>name="(.+?)" value="(.+?)"</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00>ALL</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:15]]></Time>
+<TimeTick>1579405215</TimeTick>
+<NodeArgs eType="General" icon="5" nRep="29" >
+<Disp><![CDATA[Service: Reg Save Param RegExp]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T26">
+<Obj plainTxt="False" ><![CDATA[Submit Data: login_2]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:16]]></Time>
+<TimeTick>1579405216</TimeTick>
+<NodeArgs eType="General" icon="10" nRep="30" status="Passed" >
+<Disp><![CDATA[Submit Data: login_2]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration1\t5.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T27">
+<Obj plainTxt="False" ><![CDATA[Service: Concurrent Group - start]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Concurrent Group started</CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:16]]></Time>
+<TimeTick>1579405216</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="31" >
+<Disp><![CDATA[Service: Concurrent Group - start]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T28">
+<Obj plainTxt="False" ><![CDATA[Url: web.assets_backend.css]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: web.assets_backend.css registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:16]]></Time>
+<TimeTick>1579405216</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="32" >
+<Disp><![CDATA[Url: web.assets_backend.css]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T29">
+<Obj plainTxt="False" ><![CDATA[Url: web.assets_common.js]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: web.assets_common.js registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:16]]></Time>
+<TimeTick>1579405216</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="33" >
+<Disp><![CDATA[Url: web.assets_common.js]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T30">
+<Obj plainTxt="False" ><![CDATA[Service: Concurrent Group - end]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Concurrent Group ended</CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:17]]></Time>
+<TimeTick>1579405217</TimeTick>
+<NodeArgs eType="General" icon="9" nRep="34" >
+<Disp><![CDATA[Service: Concurrent Group - end]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T31">
+<Obj plainTxt="False" ><![CDATA[Url: 003f16ffa5db0f0bc3d7182bd34ca35055762784]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:17]]></Time>
+<TimeTick>1579405217</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="35" status="Passed" >
+<Disp><![CDATA[Url: 003f16ffa5db0f0bc3d7182bd34ca35055762784]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration1\t6.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T32">
+<Obj plainTxt="False" ><![CDATA[Url: web.assets_backend.js]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Resource loaded successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:18]]></Time>
+<TimeTick>1579405218</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="36" status="Passed" >
+<Disp><![CDATA[Url: web.assets_backend.js]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T33">
+<Obj plainTxt="False" ><![CDATA[Service: Add Auto Header]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Add the following header to all subsequent HTTP requests :<BR><STRONG><FONT COLOR=#00AF00>X-Requested-With: XMLHttpRequest</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:18]]></Time>
+<TimeTick>1579405218</TimeTick>
+<NodeArgs eType="General" icon="11" nRep="37" >
+<Disp><![CDATA[Service: Add Auto Header]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T34">
+<Obj plainTxt="False" ><![CDATA[Url: 3a817ef468b1400ba3be1854ee2435433468d582]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:18]]></Time>
+<TimeTick>1579405218</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="38" status="Passed" >
+<Disp><![CDATA[Url: 3a817ef468b1400ba3be1854ee2435433468d582]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration1\t7.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T35">
+<Obj plainTxt="False" ><![CDATA[Url: favicon]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Resource loaded successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:18]]></Time>
+<TimeTick>1579405218</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="39" status="Passed" >
+<Disp><![CDATA[Url: favicon]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T36">
+<Obj plainTxt="False" ><![CDATA[Url: 026ae15487c2067877f7b82ffb991974c070d399]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:18]]></Time>
+<TimeTick>1579405218</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="40" status="Passed" >
+<Disp><![CDATA[Url: 026ae15487c2067877f7b82ffb991974c070d399]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration1\t8.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T37">
+<Obj plainTxt="False" ><![CDATA[Url: user_menu_avatar.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Resource loaded successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:18]]></Time>
+<TimeTick>1579405218</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="41" status="Passed" >
+<Disp><![CDATA[Url: user_menu_avatar.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T38">
+<Obj plainTxt="False" ><![CDATA[Service: Add Auto Header]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Add the following header to all subsequent HTTP requests :<BR><STRONG><FONT COLOR=#00AF00>Origin: http://192.168.1.66</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:18]]></Time>
+<TimeTick>1579405218</TimeTick>
+<NodeArgs eType="General" icon="11" nRep="42" >
+<Disp><![CDATA[Service: Add Auto Header]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T39">
+<Obj plainTxt="False" ><![CDATA[Custom Request: read]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="12" nRep="43" status="Passed" >
+<Disp><![CDATA[Custom Request: read]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration1\t9.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T40">
+<Obj plainTxt="False" ><![CDATA[Service: Concurrent Group - start]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Concurrent Group started</CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="44" >
+<Disp><![CDATA[Service: Concurrent Group - start]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T41">
+<Obj plainTxt="False" ><![CDATA[Url: image]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: image registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="45" >
+<Disp><![CDATA[Url: image]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T42">
+<Obj plainTxt="False" ><![CDATA[Url: fontawesome-webfont.woff2]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: fontawesome-webfont.woff2 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="46" >
+<Disp><![CDATA[Url: fontawesome-webfont.woff2]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T43">
+<Obj plainTxt="False" ><![CDATA[Service: Concurrent Group - end]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Concurrent Group ended</CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="9" nRep="47" >
+<Disp><![CDATA[Service: Concurrent Group - end]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T44">
+<Obj plainTxt="False" ><![CDATA[Custom Request: load]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="12" nRep="48" status="Passed" >
+<Disp><![CDATA[Custom Request: load]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration1\t10.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T45">
+<Obj plainTxt="False" ><![CDATA[Custom Request: load_views]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="12" nRep="49" status="Passed" >
+<Disp><![CDATA[Custom Request: load_views]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration1\t11.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T46">
+<Obj plainTxt="False" ><![CDATA[Custom Request: search_read]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="12" nRep="50" status="Passed" >
+<Disp><![CDATA[Custom Request: search_read]]></Disp>
+<BtmPane vType="HTMLSNSH" >
+<Path><![CDATA[\Iteration1\t12.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T47">
+<Obj plainTxt="False" ><![CDATA[Service: Concurrent Group - start]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Concurrent Group started</CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="8" nRep="51" >
+<Disp><![CDATA[Service: Concurrent Group - start]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T48">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="52" >
+<Disp><![CDATA[Url: icon.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T49">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_2]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_2 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="53" >
+<Disp><![CDATA[Url: icon.png_2]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T50">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_3]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_3 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="54" >
+<Disp><![CDATA[Url: icon.png_3]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T51">
+<Obj plainTxt="False" ><![CDATA[Url: stock_barcode.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: stock_barcode.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="55" >
+<Disp><![CDATA[Url: stock_barcode.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T52">
+<Obj plainTxt="False" ><![CDATA[Url: timesheet_grid.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: timesheet_grid.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="56" >
+<Disp><![CDATA[Url: timesheet_grid.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T53">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_4]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_4 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="57" >
+<Disp><![CDATA[Url: icon.png_4]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T54">
+<Obj plainTxt="False" ><![CDATA[Url: account_accountant.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: account_accountant.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="58" >
+<Disp><![CDATA[Url: account_accountant.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T55">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_5]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_5 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="59" >
+<Disp><![CDATA[Url: icon.png_5]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T56">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_6]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_6 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="60" >
+<Disp><![CDATA[Url: icon.png_6]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T57">
+<Obj plainTxt="False" ><![CDATA[Url: mrp_workorder.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: mrp_workorder.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="61" >
+<Disp><![CDATA[Url: mrp_workorder.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T58">
+<Obj plainTxt="False" ><![CDATA[Url: favicon_2]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: favicon_2 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="62" >
+<Disp><![CDATA[Url: favicon_2]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T59">
+<Obj plainTxt="False" ><![CDATA[Url: mrp_plm.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: mrp_plm.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="63" >
+<Disp><![CDATA[Url: mrp_plm.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T60">
+<Obj plainTxt="False" ><![CDATA[Url: quality_control.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: quality_control.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="64" >
+<Disp><![CDATA[Url: quality_control.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T61">
+<Obj plainTxt="False" ><![CDATA[Url: favicon_3]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: favicon_3 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="65" >
+<Disp><![CDATA[Url: favicon_3]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T62">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_7]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_7 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="66" >
+<Disp><![CDATA[Url: icon.png_7]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T63">
+<Obj plainTxt="False" ><![CDATA[Url: web_studio.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: web_studio.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="67" >
+<Disp><![CDATA[Url: web_studio.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T64">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_8]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_8 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="68" >
+<Disp><![CDATA[Url: icon.png_8]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T65">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_9]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_9 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="69" >
+<Disp><![CDATA[Url: icon.png_9]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T66">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_10]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_10 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="70" >
+<Disp><![CDATA[Url: icon.png_10]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T67">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_11]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_11 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="71" >
+<Disp><![CDATA[Url: icon.png_11]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T68">
+<Obj plainTxt="False" ><![CDATA[Url: helpdesk.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: helpdesk.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="72" >
+<Disp><![CDATA[Url: helpdesk.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T69">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_12]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_12 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="73" >
+<Disp><![CDATA[Url: icon.png_12]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T70">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_13]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_13 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="74" >
+<Disp><![CDATA[Url: icon.png_13]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T71">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_14]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_14 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="75" >
+<Disp><![CDATA[Url: icon.png_14]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T72">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_15]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_15 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="76" >
+<Disp><![CDATA[Url: icon.png_15]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T73">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_16]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_16 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="77" >
+<Disp><![CDATA[Url: icon.png_16]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T74">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_17]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_17 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="78" >
+<Disp><![CDATA[Url: icon.png_17]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T75">
+<Obj plainTxt="False" ><![CDATA[Url: hr_appraisal.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: hr_appraisal.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="79" >
+<Disp><![CDATA[Url: hr_appraisal.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T76">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_18]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_18 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="80" >
+<Disp><![CDATA[Url: icon.png_18]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T77">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_19]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_19 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="81" >
+<Disp><![CDATA[Url: icon.png_19]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T78">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_20]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_20 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="82" >
+<Disp><![CDATA[Url: icon.png_20]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T79">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_21]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_21 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="83" >
+<Disp><![CDATA[Url: icon.png_21]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T80">
+<Obj plainTxt="False" ><![CDATA[Url: project_forecast.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: project_forecast.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="84" >
+<Disp><![CDATA[Url: project_forecast.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T81">
+<Obj plainTxt="False" ><![CDATA[Url: sale_ebay.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: sale_ebay.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="85" >
+<Disp><![CDATA[Url: sale_ebay.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T82">
+<Obj plainTxt="False" ><![CDATA[Url: sale_subscription.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: sale_subscription.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="86" >
+<Disp><![CDATA[Url: sale_subscription.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T83">
+<Obj plainTxt="False" ><![CDATA[Url: sign.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: sign.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="87" >
+<Disp><![CDATA[Url: sign.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T84">
+<Obj plainTxt="False" ><![CDATA[Url: website_calendar.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: website_calendar.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="88" >
+<Disp><![CDATA[Url: website_calendar.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T85">
+<Obj plainTxt="False" ><![CDATA[Url: voip.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: voip.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="89" >
+<Disp><![CDATA[Url: voip.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T86">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_22]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_22 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="90" >
+<Disp><![CDATA[Url: icon.png_22]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T87">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_23]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_23 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="91" >
+<Disp><![CDATA[Url: icon.png_23]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T88">
+<Obj plainTxt="False" ><![CDATA[Url: marketing_automation.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: marketing_automation.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="92" >
+<Disp><![CDATA[Url: marketing_automation.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T89">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_24]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_24 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="93" >
+<Disp><![CDATA[Url: icon.png_24]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T90">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_25]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_25 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="94" >
+<Disp><![CDATA[Url: icon.png_25]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T91">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_26]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_26 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="95" >
+<Disp><![CDATA[Url: icon.png_26]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T92">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_27]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_27 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="96" >
+<Disp><![CDATA[Url: icon.png_27]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T93">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_28]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_28 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="97" >
+<Disp><![CDATA[Url: icon.png_28]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T94">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_29]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_29 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="98" >
+<Disp><![CDATA[Url: icon.png_29]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T95">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_30]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_30 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="99" >
+<Disp><![CDATA[Url: icon.png_30]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T96">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_31]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_31 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="100" >
+<Disp><![CDATA[Url: icon.png_31]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T97">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_32]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_32 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="101" >
+<Disp><![CDATA[Url: icon.png_32]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T98">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_33]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_33 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="102" >
+<Disp><![CDATA[Url: icon.png_33]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T99">
+<Obj plainTxt="False" ><![CDATA[Url: icon.png_34]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: icon.png_34 registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="103" >
+<Disp><![CDATA[Url: icon.png_34]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T100">
+<Obj plainTxt="False" ><![CDATA[Url: web_mobile.png]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Url: web_mobile.png registered successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:19]]></Time>
+<TimeTick>1579405219</TimeTick>
+<NodeArgs eType="General" icon="6" nRep="104" >
+<Disp><![CDATA[Url: web_mobile.png]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T101">
+<Obj plainTxt="False" ><![CDATA[Service: Concurrent Group - end]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Concurrent Group ended</CENTER>]]></Details>
+<Time><![CDATA[19/1/2020 - 11:40:20]]></Time>
+<TimeTick>1579405220</TimeTick>
+<NodeArgs eType="General" icon="9" nRep="105" >
+<Disp><![CDATA[Service: Concurrent Group - end]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="19/1/2020 - 11:40:13" eTime="19/1/2020 - 11:40:20" passed="14" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="8" status="Passed" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="7" status="Passed" >
+<Disp><![CDATA[OdooLoginTest1 Iteration 1 (Row 1)]]></Disp>
+</NodeArgs>
+</DIter>
+<Action rID="T102">
+<AName><![CDATA[vuser_end]]></AName>
+<Summary sTime="19/1/2020 - 11:40:20" eTime="19/1/2020 - 11:40:20" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="108" >
+<Disp><![CDATA[vuser_end Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Summary sTime="19/1/2020 - 11:40:13" eTime="19/1/2020 - 11:40:20" passed="14" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartTest" icon="1" nRep="4" status="Passed" >
+<Disp><![CDATA[Test OdooLoginTest1 Summary]]></Disp>
+</NodeArgs>
+</Doc>
+</Report>

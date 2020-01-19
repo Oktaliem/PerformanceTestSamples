@@ -1,0 +1,5 @@
+"{\"jsonrpc\":\"2.0\",\"method\":\"call\",\"params\":{\"model\":\"ir.module.module\",\"domain\""
+":[[\"application\",\"=\",true]],\"fields\":[\"icon\",\"to_buy\",\"name\",\"state\",\"summary\""
+",\"website\",\"application\",\"shortdesc\"],\"limit\":80,\"sort\":\"\",\"context\":{\"lang\":\""
+"en_US\",\"tz\":\"Europe/Brussels\",\"uid\":2,\"allowed_company_ids\":[1],\"bin_size\":true}},\""
+"id\":806588863}"

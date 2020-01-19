@@ -1,0 +1,11 @@
+[t24]
+FileName1=t24.json
+URL1=http://192.168.1.66/web/dataset/call_kw/ir.module.module/load_views
+Total=1
+RequestHeaderFile=t24_RequestHeader.txt
+RequestBodyFile=t24_RequestBody.txt
+ResponseHeaderFile=t24_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_24.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

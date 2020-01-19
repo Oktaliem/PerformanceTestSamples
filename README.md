@@ -8,10 +8,14 @@ Tools that being used in this repository:
 - Gatling
 - LoadRunner
 
+Scenario : Login to Odoo
+
 ## Client-side Performace Testing tools
 Tools that being used in this repository:
 - Web.dev / Chrome Extention - Lighthouse
 - Webpagetest
+
+Scenario : Go to Odoo Official Webpage
 
 ## System Under Test - Install Odoo via Docker
 ```

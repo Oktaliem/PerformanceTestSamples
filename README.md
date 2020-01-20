@@ -76,7 +76,7 @@ ${path_to_your_project}/PerformaceTestSamples/target/gatling/odoologintest-${gat
    alt="CLICK HERE" width="140" height="80" border="10" /></a>
 
 
-## LOADRUNNER
+## LOADRUNNER - HTML/Http Protocol
 
 ###### Download and Install LoadRunner
 [Download & Install](https://www.guru99.com/guide-to-download-and-install-hp-loadrunner-12-0.html)
@@ -103,4 +103,14 @@ In-progress
 ```
 
 
+## JMETER & SELENIUM
+```
+In-progress
+```
 
+
+## LOADRUNNER - TruClient Protocol
+
+```
+In-progress
+```

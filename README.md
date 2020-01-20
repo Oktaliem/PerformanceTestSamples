@@ -14,6 +14,8 @@ Scenario : Login to Odoo
 Tools that being used in this repository:
 - Web.dev / Chrome Extention - Lighthouse
 - Webpagetest
+- Jmeter & Selenium
+- LoadRunner - TrueClient protocol
 
 Scenario : Go to Odoo Official Webpage
 

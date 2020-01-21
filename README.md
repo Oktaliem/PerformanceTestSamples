@@ -112,6 +112,8 @@ In-progress
 
 ## JMETER & SELENIUM
 [Add WebDriver Plugin](https://jmeter-plugins.org/wiki/WebDriverTutorial/)
+[Documentation](https://github.com/undera/jmeter-plugins-webdriver)
+
 
 ```
 In-progress

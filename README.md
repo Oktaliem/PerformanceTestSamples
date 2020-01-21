@@ -7,17 +7,18 @@ Tools that being used in this repository:
 - Apache JMeter
 - Gatling
 - LoadRunner
-
 Scenario : Login to Odoo
 
 ## Client-side Performace Testing tools
 Tools that being used in this repository:
 - Web.dev / Chrome Extention - Lighthouse
 - Webpagetest
+Scenario : Go to Odoo Official Webpage
+
 - Jmeter & Selenium
 - LoadRunner - TrueClient protocol
+Scenario : Login to Odoo
 
-Scenario : Go to Odoo Official Webpage
 
 ## System Under Test - Install Odoo via Docker
 ```

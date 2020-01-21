@@ -64,7 +64,7 @@ class OdooLoginTest extends Simulation {
     "Sec-Fetch-Mode" -> "no-cors",
     "Sec-Fetch-Site" -> "same-origin")
 
-  val uri2 = "https://www.google-analytics.com/analytics.js"
+//  val uri2 = "https://www.google-analytics.com/analytics.js"
 
   val go_to_login_page = group("Go To Login Page") {
     exec(
@@ -91,8 +91,8 @@ class OdooLoginTest extends Simulation {
           http("request_2")
             .get("/web/webclient/qweb/3a817ef468b1400ba3be1854ee2435433468d582?mods=base,web,base_import,web_diagram,web_editor,web_kanban_gauge,web_tour")
             .headers(headers_2),
-          http("request_3")
-            .get(uri2),
+//          http("request_3")
+//            .get(uri2),
           http("request_4")
             .get("/web/webclient/translations/026ae15487c2067877f7b82ffb991974c070d399?mods=base%2Cweb%2Cbase_import%2Cweb_diagram%2Cweb_editor%2Cweb_kanban_gauge%2Cweb_tour&lang=en_US")
             .headers(headers_2),

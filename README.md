@@ -62,7 +62,7 @@ ${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/bin/htmlreport/i
 
 ###### Running server-side load testing demo with Gatling - Web Application
 ```properties
-1. Go to your project path ${your_project_path}/PerformaceTestSamples
+1. Go to your project path ${your_project_path}/PerformaceTestSamples/gatling
 2. Run this syntax
 $ mvn clean gatling:test -Dgatling.simulationClass=com.oktaliem.gatling.OdooLoginTest -Dusers=50 -DrampUp=50
 

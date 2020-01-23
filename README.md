@@ -38,14 +38,9 @@ $ docker-compose up -d
 
 ###### Running server-side load testing demo with JMeter - Web Application
 ```properties
-1. Go to your JMeter path ${your_project_path}/PerformaceTestSamples/apache-jmeter-5.2.1/
+1. Go to your JMeter path ${your_project_path}/PerformaceTestSamples/apache-jmeter-5.2.1/bin/
 2. Run this below syntax
 $ ./jmeter -Jusers=50 -Jrampup=50 -Jhold=50 -Jrampdown=50 -n -t "${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/testscenario/Odoo_Login_Scenario_Recorder.jmx"  -l "${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/bin/htmlreport/Odoo_Login_Scenario_Recorder.jtl" -e -o "${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/bin/htmlreport/"
-
-or
-
-> jmeter -Jusers=50 -Jrampup=50 -Jhold=50 -Jrampdown=50 -n -t "${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/testscenario/Odoo_Login_Scenario_Recorder.jmx"  -l "${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/bin/htmlreport/Odoo_Login_Scenario_Recorder.jtl" -e -o "${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/bin/htmlreport/"
-
 ```
 
 ###### Open JMeter HTML Report
@@ -66,7 +61,7 @@ ${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/bin/htmlreport/i
 
 ###### Running server-side load testing demo with Gatling - Web Application
 ```properties
-1. Go to your project path ${your_project_path}/PerformaceTestSamples/gatling
+1. Go to your project path ${your_project_path}/PerformaceTestSamples/gatling/
 2. Run this syntax
 $ mvn clean gatling:test -Dgatling.simulationClass=com.oktaliem.gatling.OdooLoginTest -Dusers=50 -DrampUp=50
 
@@ -112,13 +107,18 @@ In-progress
 
 ## JMETER & SELENIUM
 [Add WebDriver Plugin](https://jmeter-plugins.org/wiki/WebDriverTutorial/)
+
 [Documentation](https://github.com/undera/jmeter-plugins-webdriver)
 
-
+###### Running End to End Client-side load testing demo with JMeter & Selenium - Web Application
+```properties
+1. Go to your JMeter path ${your_project_path}/PerformaceTestSamples/apache-jmeter-5.2.1/bin/
+2. Run this below syntax
+$ ./jmeter -Jusers=10 -Jrampup=10 -Jhold=30 -Jrampdown=10 -n -t "${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/testscenario/Odoo_Login_Scenario_Selenium.jmx"  -l "${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/bin/htmlreport/Odoo_Login_Scenario_Selenium.jtl" -e -o "${your_project_path}/PerformanceTestSamples/apache-jmeter-5.2.1/bin/htmlreport/"
 ```
-In-progress
-```
-
+###### JMeter-Selenium Youtube Demo
+   <a href="https://youtu.be/FNMTDnkWOVY" target="_blank"><img src="https://user-images.githubusercontent.com/26521948/72658109-63a1d400-39e7-11ea-9667-c652586b4508.png" 
+   alt="CLICK HERE" width="140" height="80" border="10" /></a>
 
 ## LOADRUNNER - TruClient Protocol
 

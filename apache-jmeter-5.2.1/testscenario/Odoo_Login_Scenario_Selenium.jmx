@@ -227,12 +227,12 @@ WDS.sampleResult.sampleEnd()
       </hashTree>
       <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="Login To Odoo" enabled="true">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="447770777">
-            <stringProp name="1567">10</stringProp>
+          <collectionProp name="589626595">
+            <stringProp name="1971853638">${__P(users,10)}</stringProp>
             <stringProp name="0">0</stringProp>
-            <stringProp name="1567">10</stringProp>
-            <stringProp name="1629">30</stringProp>
-            <stringProp name="10">10</stringProp>
+            <stringProp name="-7065213">${__P(rampup,10)}</stringProp>
+            <stringProp name="2107719471">${__P(hold,30)}</stringProp>
+            <stringProp name="305558556">${__P(rampdown,10)}</stringProp>
           </collectionProp>
         </collectionProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -355,6 +355,7 @@ WDS.sampleResult.sampleEnd()
             </value>
           </objProp>
           <stringProp name="filename"></stringProp>
+          <stringProp name="TestPlan.comments">lets debug the jmeter script</stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">

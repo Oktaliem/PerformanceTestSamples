@@ -82,6 +82,12 @@ ${path_to_your_project}/PerformaceTestSamples/target/gatling/odoologintest-${gat
 ###### Download and Install LoadRunner
 [Download & Install](https://www.guru99.com/guide-to-download-and-install-hp-loadrunner-12-0.html)
 
+[Virtual User Generator Basic Tutorial ](https://www.guru99.com/understanding-vugen-in-loadrunner.html)
+
+[LoadRunner Controller Basic Tutorial](https://www.guru99.com/how-to-use-controller-in-loadrunner.html)
+
+[LoadRunner Analyzer Basic Tutorial](https://www.guru99.com/how-to-use-analyzer-in-loadrunner-12-0.html)
+
 ###### Running server-side load testing demo with LoadRunner - Web Application - Youtube Demo
    <a href="https://youtu.be/H7MB7pD83Cw" target="_blank"><img src="https://user-images.githubusercontent.com/26521948/72658109-63a1d400-39e7-11ea-9667-c652586b4508.png" 
    alt="CLICK HERE" width="140" height="80" border="10" /></a>
